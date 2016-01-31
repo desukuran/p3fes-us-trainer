@@ -87,6 +87,7 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Global.cpp" />
+    <ClCompile Include="Offsets.cpp" />
     <ClCompile Include="persona3fespcsx2.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -98,6 +99,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Global.h" />
+    <ClInclude Include="Offsets.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>

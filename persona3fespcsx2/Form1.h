@@ -37,6 +37,14 @@ namespace persona3fespcsx2 {
 			}
 		}
 	private: System::Windows::Forms::ComboBox^  comboBox1;
+	private: System::Windows::Forms::Label^  label1;
+	private: System::Windows::Forms::GroupBox^  groupBox1;
+	private: System::Windows::Forms::GroupBox^  groupBox2;
+	private: System::Windows::Forms::Label^  label2;
+	private: System::Windows::Forms::NumericUpDown^  num_mc_level;
+
+	private: System::Windows::Forms::Timer^  timer1;
+	private: System::ComponentModel::IContainer^  components;
 	protected: 
 
 	protected: 
@@ -51,7 +59,7 @@ namespace persona3fespcsx2 {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -60,7 +68,17 @@ namespace persona3fespcsx2 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			this->components = (gcnew System::ComponentModel::Container());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->num_mc_level = (gcnew System::Windows::Forms::NumericUpDown());
+			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
+			this->groupBox1->SuspendLayout();
+			this->groupBox2->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->num_mc_level))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// comboBox1
@@ -85,27 +103,89 @@ namespace persona3fespcsx2 {
 				L"Mara", L"Kartikeya", L"Baal Zebul", L"Suparna", L"Lucifer", L"Nidhoggr", L"Atavaka", L"Orpheus Telos", L"Universe", L"Io", 
 				L"Isis", L"Palladion", L"Athena", L" Penthesilea", L"Artemisia", L"Hermes", L"Trismegistus", L"Lucia", L"Juno", L"Polydeusces", 
 				L"Caesar", L"Nemesis", L"Kala-Nemi", L"Castor", L"Cerbeus", L"Hypnos", L"Moros", L"Medea", L"Psyche"});
-			this->comboBox1->Location = System::Drawing::Point(59, 110);
+			this->comboBox1->Location = System::Drawing::Point(16, 38);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(121, 21);
 			this->comboBox1->TabIndex = 1;
 			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &Form1::comboBox1_SelectedIndexChanged);
 			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(16, 19);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(84, 13);
+			this->label1->TabIndex = 2;
+			this->label1->Text = L"Persona Modifer";
+			// 
+			// groupBox1
+			// 
+			this->groupBox1->Controls->Add(this->label1);
+			this->groupBox1->Controls->Add(this->comboBox1);
+			this->groupBox1->Location = System::Drawing::Point(12, 12);
+			this->groupBox1->Name = L"groupBox1";
+			this->groupBox1->Size = System::Drawing::Size(171, 260);
+			this->groupBox1->TabIndex = 3;
+			this->groupBox1->TabStop = false;
+			this->groupBox1->Text = L"1st Persona Stats";
+			// 
+			// groupBox2
+			// 
+			this->groupBox2->Controls->Add(this->label2);
+			this->groupBox2->Controls->Add(this->num_mc_level);
+			this->groupBox2->Location = System::Drawing::Point(229, 12);
+			this->groupBox2->Name = L"groupBox2";
+			this->groupBox2->Size = System::Drawing::Size(171, 260);
+			this->groupBox2->TabIndex = 4;
+			this->groupBox2->TabStop = false;
+			this->groupBox2->Text = L"M.C. Stats";
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Location = System::Drawing::Point(7, 19);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(33, 13);
+			this->label2->TabIndex = 1;
+			this->label2->Text = L"Level";
+			// 
+			// num_mc_level
+			// 
+			this->num_mc_level->Location = System::Drawing::Point(6, 38);
+			this->num_mc_level->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) {99, 0, 0, 0});
+			this->num_mc_level->Name = L"num_mc_level";
+			this->num_mc_level->Size = System::Drawing::Size(44, 20);
+			this->num_mc_level->TabIndex = 0;
+			this->num_mc_level->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			this->num_mc_level->ValueChanged += gcnew System::EventHandler(this, &Form1::numericUpDown1_ValueChanged);
+			// 
+			// timer1
+			// 
+			this->timer1->Tick += gcnew System::EventHandler(this, &Form1::timer1_Tick);
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 262);
-			this->Controls->Add(this->comboBox1);
+			this->ClientSize = System::Drawing::Size(503, 470);
+			this->Controls->Add(this->groupBox2);
+			this->Controls->Add(this->groupBox1);
 			this->Name = L"Form1";
-			this->Text = L"Form1";
+			this->Text = L"Persona 3 Trainer - PCSX 2";
 			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
+			this->groupBox1->ResumeLayout(false);
+			this->groupBox1->PerformLayout();
+			this->groupBox2->ResumeLayout(false);
+			this->groupBox2->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->num_mc_level))->EndInit();
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
 	private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void comboBox1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e);
-	};
+	private: System::Void numericUpDown1_ValueChanged(System::Object^  sender, System::EventArgs^  e);
+	private: System::Void timer1_Tick(System::Object^  sender, System::EventArgs^  e);
+};
 }
 
