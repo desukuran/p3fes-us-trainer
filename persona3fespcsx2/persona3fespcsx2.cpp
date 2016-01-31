@@ -197,6 +197,63 @@ System::Void Form1::persona1_lu_ValueChanged(System::Object^  sender, System::Ev
 	setValue(COffsets::persona1_luc, index, 1);
 }
 
+System::Void Form1::persona1_magic1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona1_magic1->SelectedIndex;
+
+	setValue(COffsets::persona1_magic1, index, 2);
+}
+
+System::Void Form1::persona1_magic2_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona1_magic2->SelectedIndex;
+
+	setValue(COffsets::persona1_magic2, index, 2);
+}
+
+System::Void Form1::persona1_magic3_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona1_magic3->SelectedIndex;
+
+	setValue(COffsets::persona1_magic3, index, 2);
+}
+
+System::Void Form1::persona1_magic4_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona1_magic4->SelectedIndex;
+
+	setValue(COffsets::persona1_magic4, index, 2);
+}
+
+System::Void Form1::persona1_magic5_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona1_magic5->SelectedIndex;
+
+	setValue(COffsets::persona1_magic5, index, 2);
+}
+
+System::Void Form1::persona1_magic6_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona1_magic6->SelectedIndex;
+
+	setValue(COffsets::persona1_magic6, index, 2);
+}
+
+System::Void Form1::persona1_magic7_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona1_magic7->SelectedIndex;
+
+	setValue(COffsets::persona1_magic7, index, 2);
+}
+
+System::Void Form1::persona1_magic8_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona1_magic8->SelectedIndex;
+
+	setValue(COffsets::persona1_magic8, index, 2);
+}
+
+
 System::Void Form1::timer1_Tick(System::Object^  sender, System::EventArgs^  e)
 {
 	//TODO: This needs to be fixed. Buff comes out corrupted.

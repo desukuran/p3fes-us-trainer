@@ -73,6 +73,20 @@ namespace persona3fespcsx2 {
 	private: System::Windows::Forms::Label^  label13;
 	private: System::Windows::Forms::NumericUpDown^  persona1_st;
 	private: System::Windows::Forms::Label^  label12;
+	private: System::Windows::Forms::Label^  label17;
+	private: System::Windows::Forms::ComboBox^  persona1_magic1;
+	private: System::Windows::Forms::ComboBox^  persona1_magic8;
+
+	private: System::Windows::Forms::ComboBox^  persona1_magic7;
+
+	private: System::Windows::Forms::ComboBox^  persona1_magic6;
+
+	private: System::Windows::Forms::ComboBox^  persona1_magic5;
+
+	private: System::Windows::Forms::ComboBox^  persona1_magic4;
+	private: System::Windows::Forms::ComboBox^  persona1_magic3;
+	private: System::Windows::Forms::ComboBox^  persona1_magic2;
+
 
 	private: System::ComponentModel::IContainer^  components;
 	protected: 
@@ -103,6 +117,15 @@ namespace persona3fespcsx2 {
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->persona1_magic8 = (gcnew System::Windows::Forms::ComboBox());
+			this->persona1_magic7 = (gcnew System::Windows::Forms::ComboBox());
+			this->persona1_magic6 = (gcnew System::Windows::Forms::ComboBox());
+			this->persona1_magic5 = (gcnew System::Windows::Forms::ComboBox());
+			this->persona1_magic4 = (gcnew System::Windows::Forms::ComboBox());
+			this->persona1_magic3 = (gcnew System::Windows::Forms::ComboBox());
+			this->persona1_magic2 = (gcnew System::Windows::Forms::ComboBox());
+			this->label17 = (gcnew System::Windows::Forms::Label());
+			this->persona1_magic1 = (gcnew System::Windows::Forms::ComboBox());
 			this->persona1_lu = (gcnew System::Windows::Forms::NumericUpDown());
 			this->label16 = (gcnew System::Windows::Forms::Label());
 			this->persona1_ag = (gcnew System::Windows::Forms::NumericUpDown());
@@ -193,6 +216,15 @@ namespace persona3fespcsx2 {
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->persona1_magic8);
+			this->groupBox1->Controls->Add(this->persona1_magic7);
+			this->groupBox1->Controls->Add(this->persona1_magic6);
+			this->groupBox1->Controls->Add(this->persona1_magic5);
+			this->groupBox1->Controls->Add(this->persona1_magic4);
+			this->groupBox1->Controls->Add(this->persona1_magic3);
+			this->groupBox1->Controls->Add(this->persona1_magic2);
+			this->groupBox1->Controls->Add(this->label17);
+			this->groupBox1->Controls->Add(this->persona1_magic1);
 			this->groupBox1->Controls->Add(this->persona1_lu);
 			this->groupBox1->Controls->Add(this->label16);
 			this->groupBox1->Controls->Add(this->persona1_ag);
@@ -209,10 +241,643 @@ namespace persona3fespcsx2 {
 			this->groupBox1->Controls->Add(this->comboBox1);
 			this->groupBox1->Location = System::Drawing::Point(218, 12);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(142, 260);
+			this->groupBox1->Size = System::Drawing::Size(142, 446);
 			this->groupBox1->TabIndex = 3;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"1st Persona Stats";
+			// 
+			// persona1_magic8
+			// 
+			this->persona1_magic8->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->persona1_magic8->FormattingEnabled = true;
+			this->persona1_magic8->Items->AddRange(gcnew cli::array< System::Object^  >(624) {L"Slash Attack", L"Agi", L"Agilao", L"Agidyne", 
+				L"Maragi", L"Maragion", L"Maragidyne", L"Maralagidyne", L"0x008", L"Ragnarok", L"Garu", L"Garula", L"Garudyne", L"Magaru", L"Magarula", 
+				L"Magarudyne", L"0x010", L"0x011", L"Panta Rhei", L"Bufu", L"Bufula", L"Bufudyne", L"Mabufu", L"Mabufula", L"Mabufudyne", L"0x019", 
+				L"0x01A", L"Niflheim", L"Zio", L"Zionga", L"Ziodyne", L"Mazio", L"Mazionga", L"Maziodyne", L"0x022", L"0x023", L"Thunder Reign", 
+				L"Megido", L"Megidola", L"Megidolaon", L"Last Resort", L"0x029", L"0x02A", L"Black Viper", L"Morning Star", L"Hama", L"Mahama", 
+				L"Hamaon", L"Mahamaon", L"0x031", L"Samsara", L"Mudo", L"Mamudo", L"Mudoon", L"Mamudoon", L"0x037", L"Die for Me!", L"Marin Karin", 
+				L"Sexy Dance", L"Bewilder", L"Eerie Sound", L"Pulinpa", L"Tentarafoo", L"Evil Touch", L"Evil Smile", L"Ghastly Wail", L"Provoke", 
+				L"Infuriate", L"Poisma", L"Poison Mist", L"Virus Breath", L"0x047", L"0x048", L"Foul Breath", L"Stagnant Air", L"Life Drain", 
+				L"Spirit Drain", L"0x04D", L"0x04E", L"0x04F", L"Maragidyne", L"Magarudyne", L"Mabufudyne", L"Maziodyne", L"Megidolaon", L"Mahamaon", 
+				L"Mamudoon", L"Sexy Dance", L"Eerie Sound", L"Tentarafoo", L"Evil Smile", L"Poison Mist", L"Holy Arrow", L"Life Drain", L"Spirit Drain", 
+				L"0x05F", L"Death", L"Yell", L"Yell", L"Death", L"Death", L"Death", L"Moonless Gown", L"Moonless Gown", L"Summon", L"Slash Attack", 
+				L"Pierce Attack", L"Strike Attack", L"Yell", L"Pierce Attack", L"Fire Attack", L"Almighty Attack", L"Bash", L"Assault Dive", 
+				L"Kill Rush", L"Swift Strike", L"Sonic Punch", L"Heat Wave", L"Gigantic Fist", L"Akasha Arts", L"God\'s Hand", L"Cleave", L"Fatal End", 
+				L"Getsu-ei", L"Zan-ei", L"Mighty Swing", L"Double Fangs", L"Blade of Fury", L"Deathbound", L"Tempest Slash", L"Heaven\'s Blade", 
+				L"Pralaya", L"Power Slash", L"Gale Slash", L"Brave Blade", L"Herculean Strike", L"Vicious Strike", L"Single Shot", L"Twin Shot", 
+				L"Holy Arrow", L"Torrent Shot", L"Arrow Rain", L"Myriad Arrows", L"Primal Force", L"Vorpal Blade", L"Weary Thrust", L"Cruel Attack", 
+				L"Vile Assault", L"Poison Arrow", L"Weary Thrust", L"Vorpal Blade", L"0x097", L"0x098", L"0x099", L"0x09A", L"0x09B", L"0x09C", 
+				L"0x09D", L"0x09E", L"0x09F", L"+charm(low)", L"+charm(med)", L"+charm(high)", L"+distress(low)", L"+distress(med)", L"+distress(high)", 
+				L"+panic(low)", L"+panic(med)", L"+panic(high)", L"+fear(low)", L"+fear(med)", L"+fear(high)", L"+rage(low)", L"+rage(med)", 
+				L"+rage(high)", L"+poison(low)", L"0x0B0", L"0x0B1", L"0x0B2", L"0x0B3", L"0x0B4", L"0x0B5", L"0x0B6", L"0x0B7", L"0x0B8", L"0x0B9", 
+				L"0x0BA", L"0x0BB", L"0x0BC", L"0x0BD", L"0x0BE", L"0x0BF", L"Dia", L"Diarama", L"Diarahan", L"Media", L"Mediarama", L"Mediarahan", 
+				L"Salvation", L"Patra", L"Me Patra", L"Re Patra", L"Posumudi", L"Amrita", L"Recarm", L"Samarecarm", L"Tarunda", L"Matarunda", 
+				L"Sukunda", L"Masukunda", L"Rakunda", L"Marakunda", L"Dekunda", L"0x0D5", L"Tarukaja", L"Matarukaja", L"Sukukaja", L"Masukukaja", 
+				L"Rakukaja", L"Marakukaja", L"Power Charge", L"Mind Charge", L"0x0DE", L"Dekaja", L"Tetrakarn", L"Makarakarn", L"Rebellion", 
+				L"Revolution", L"0x0E4", L"Fire Break", L"Ice Break", L"Wind Break", L"Elec Break", L"Traesto", L"Trafuri", L"Healing Wave", 
+				L"Recarmdra", L"Charmdi", L"Enradi", L"0x0EF", L"0x0F0", L"0x0F1", L"0x0F2", L"0x0F3", L"0x0F4", L"0x0F5", L"0x0F6", L"0x0F7", 
+				L"0x0F8", L"0x0F9", L"0x0FA", L"0x0FB", L"0x0FC", L"0x0FD", L"0x0FE", L"0x0FF", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Jack Brothers", L"Ardhanari", L"Trickster", 
+				L"Infinity", L"Valhalla", L"Summer Dream", L"Armageddon", L"Cadenza", L"Scarlet Havoc", L"Frolic", L"Dreamfest", L"King and I", 
+				L"Best Friends", L"Shadow Hound", L"Thunder Call", L"Last Judge", L"Raktapaksha", L"Justice", L"Trickster", L"0x123", L"0x124", 
+				L"Primal Darkness", L"Dark Embrace", L"Primal Darkness", L"Primal Darkness", L"0x129", L"0x12A", L"0x12B", L"0x12C", L"0x12D", 
+				L"0x12E", L"0x12F", L"Pierce Attack", L"Fire Attack", L"Summon", L"Summon", L"Armed&Ready", L"Sacrifice", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Night Queen", 
+				L"All-Out 2", L"All-Out 3", L"All-Out 4", L"Plume of Dusk", L"Analyze", L"Oracle", L"Full Analysis", L"Oracle", L"Oracle", L"Oracle", 
+				L"Oracle", L"Oracle", L"All-Out 2L", L"All-Out 3L", L"All-Out 4L", L"Support Scan", L"Third Eye", L"Mind DJ", L"DJ Queen", L"Escape Route", 
+				L"Healing Wave", L"Summon", L"Orgia Mode", L"Great Seal", L"0x158", L"0x159", L"Ice Attack", L"Wind Attack", L"Elec Attack", 
+				L"Fire Attack", L"Pierce Attack", L"Strike Attack", L"Summon", L"Summon", L"Summon", L"Prophecy of Ruin", L"Heartbreaker", L"Unite", 
+				L"Separate", L"Pierce Attack", L"Pierce Attack", L"Samarecarm", L"Samarecarm", L"Charge", L"Giga Spark", L"Wheel of Fortune", 
+				L"Wheel of Fortune", L"Wheel of Fortune", L"Paradigm Shift", L"Wheel of Fortune", L"Wheel of Fortune", L"E Attack Up", L"P Attack Up", 
+				L"E Attack Down", L"P Attack Down", L"E Defense Up", L"P Defense Up", L"E Defense Down", L"P Defense Down", L"E Panic", L"P Panic", 
+				L"E Rage", L"P Rage", L"E Distress", L"P Distress", L"E Fear", L"P Fear", L"E Damage Low", L"P Damage Low", L"E Damage Mid", 
+				L"P Damage Mid", L"E Damage High", L"P Damage High", L"E Heal", L"P Heal", L"Almighty Attack", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Band Aid", L"Medicine", L"Bead", L"Snuff Soul", L"Chewing Soul", L"Precious Egg", L"Soma", 
+				L"0x197", L"0x198", L"0x199", L"0x19A", L"Muscle Drink", L"Odd Morsel", L"Rancid Gravy", L"Powerful Drug", L"Cold Medicine", 
+				L"Energy Drink", L"0x1A1", L"0x1A2", L"0x1A3", L"0x1A4", L"0x1A5", L"0x1A6", L"0x1A7", L"0x1A8", L"0x1A9", L"0x1AA", L"0x1AB", 
+				L"0x1AC", L"0x1AD", L"0x1AE", L"0x1AF", L"0x1B0", L"0x1B1", L"0x1B2", L"0x1B3", L"0x1B4", L"0x1B5", L"Homunculus", L"Plume of Dusk", 
+				L"0x1B8", L"0x1B9", L"0x1BA", L"0x1BB", L"0x1BC", L"0x1BD", L"0x1BE", L"0x1BF", L"0x1C0", L"0x1C1", L"0x1C2", L"0x1C3", L"0x1C4", 
+				L"0x1C5", L"0x1C6", L"0x1C7", L"0x1C8", L"0x1C9", L"0x1CA", L"0x1CB", L"0x1CC", L"0x1CD", L"0x1CE", L"0x1CF", L"Resist Slash", 
+				L"Null Slash", L"Repel Slash", L"Absorb Slash", L"Resist Strike", L"Null Strike", L"Repel Strike", L"Absorb Strike", L"Resist Pierce", 
+				L"Null Pierce", L"Repel Pierce", L"Absorb Pierce", L"Resist Fire", L"Null Fire", L"Repel Fire", L"Absorb Fire", L"Resist Ice", 
+				L"Null Ice", L"Repel Ice", L"Absorb Ice", L"Resist Elec", L"Null Elec", L"Repel Elec", L"Absorb Elec", L"Resist Wind", L"Null Wind", 
+				L"Repel Wind", L"Absorb Wind", L"Resist Light", L"Null Light", L"Repel Light", L"Resist Dark", L"Null Dark", L"Repel Dark", L"Null Charm", 
+				L"Null Distress", L"Null Panic", L"Null Fear", L"Null Rage", L"Null Freeze", L"Null Shock", L"Null Poison", L"Unshaken Will", 
+				L"Masakados", L"Dodge Slash", L"Evade Slash", L"Dodge Strike", L"Evade Strike", L"Dodge Pierce", L"Evade Pierce", L"Dodge Fire", 
+				L"Evade Fire", L"Dodge Ice", L"Evade Ice", L"Dodge Wind", L"Evade Wind", L"Dodge Elec", L"Evade Elec", L"Stamina Up 1", L"Stamina Up 2", 
+				L"Stamina Up 3", L"0x20D", L"Premonition", L"Angelic Grace", L"Fire Boost", L"Fire Amp", L"Ice Boost", L"Ice Amp", L"Elec Boost", 
+				L"Elec Amp", L"Wind Boost", L"Wind Amp", L"Fast Retreat", L"HP Up 1", L"HP Up 2", L"HP Up 3", L"SP Up 1", L"SP Up 2", L"SP Up 3", 
+				L"Raging Tiger", L"Counter", L"Counterstrike", L"High Counter", L"Regenerate 1", L"Regenerate 2", L"Regenerate 3", L"Invigorate 1", 
+				L"Invigorate 2", L"Invigorate 3", L"Growth 1", L"Growth 2", L"Growth 3", L"0x22C", L"Auto-Tarukaja", L"Auto-Rakukaja", L"Auto-Sukukaja", 
+				L"Alertness", L"Sharp Student", L"Apt Pupil", L"Ali Dance", L"Firm Stance", L"Spell Master", L"Arms Master", L"HP Up", L"SP Up", 
+				L"0x239", L"Divine Grace", L"Endure", L"Enduring Soul", L"Heavy Master", L"Magic Skill Up", L"Phys Skill Up", L"0x240", L"0x240", 
+				L"0x240", L"0x243", L"Rosary", L"Prayer Beads", L"Spear Master", L"Bow Master", L"1hSwd Master", L"2hSwd Master", L"Fist Master", 
+				L"Survive Light", L"Survive Dark", L"Auto-Maraku", L"Auto-Mataru", L"Auto-Masuku", L"Charm Boost", L"Poison Boost", L"Distress Boost", 
+				L"Panic Boost", L"Fear Boost", L"Rage Boost", L"Ailment Boost", L"Hama Boost", L"Mudo Boost", L"Endure Light", L"Endure Dark", 
+				L"0x25B", L"0x25C", L"Cool Breeze", L"Victory Cry", L"Spring of Life", L"Spring of Life", L"For Debug", L"Fast-Heal", L"Insta-Heal", 
+				L"Resist Charm", L"Resist Distress", L"Resist Panic", L"Resist Fear", L"Resist Rage", L"Resist Freeze", L"Resist Shock", L"Resist Poison", 
+				L"HP Up High", L"SP Up High", L"0x26E", L"0x26F"});
+			this->persona1_magic8->Location = System::Drawing::Point(9, 411);
+			this->persona1_magic8->Name = L"persona1_magic8";
+			this->persona1_magic8->Size = System::Drawing::Size(121, 21);
+			this->persona1_magic8->TabIndex = 39;
+			this->persona1_magic8->SelectedIndexChanged += gcnew System::EventHandler(this, &Form1::persona1_magic8_SelectedIndexChanged);
+			// 
+			// persona1_magic7
+			// 
+			this->persona1_magic7->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->persona1_magic7->FormattingEnabled = true;
+			this->persona1_magic7->Items->AddRange(gcnew cli::array< System::Object^  >(624) {L"Slash Attack", L"Agi", L"Agilao", L"Agidyne", 
+				L"Maragi", L"Maragion", L"Maragidyne", L"Maralagidyne", L"0x008", L"Ragnarok", L"Garu", L"Garula", L"Garudyne", L"Magaru", L"Magarula", 
+				L"Magarudyne", L"0x010", L"0x011", L"Panta Rhei", L"Bufu", L"Bufula", L"Bufudyne", L"Mabufu", L"Mabufula", L"Mabufudyne", L"0x019", 
+				L"0x01A", L"Niflheim", L"Zio", L"Zionga", L"Ziodyne", L"Mazio", L"Mazionga", L"Maziodyne", L"0x022", L"0x023", L"Thunder Reign", 
+				L"Megido", L"Megidola", L"Megidolaon", L"Last Resort", L"0x029", L"0x02A", L"Black Viper", L"Morning Star", L"Hama", L"Mahama", 
+				L"Hamaon", L"Mahamaon", L"0x031", L"Samsara", L"Mudo", L"Mamudo", L"Mudoon", L"Mamudoon", L"0x037", L"Die for Me!", L"Marin Karin", 
+				L"Sexy Dance", L"Bewilder", L"Eerie Sound", L"Pulinpa", L"Tentarafoo", L"Evil Touch", L"Evil Smile", L"Ghastly Wail", L"Provoke", 
+				L"Infuriate", L"Poisma", L"Poison Mist", L"Virus Breath", L"0x047", L"0x048", L"Foul Breath", L"Stagnant Air", L"Life Drain", 
+				L"Spirit Drain", L"0x04D", L"0x04E", L"0x04F", L"Maragidyne", L"Magarudyne", L"Mabufudyne", L"Maziodyne", L"Megidolaon", L"Mahamaon", 
+				L"Mamudoon", L"Sexy Dance", L"Eerie Sound", L"Tentarafoo", L"Evil Smile", L"Poison Mist", L"Holy Arrow", L"Life Drain", L"Spirit Drain", 
+				L"0x05F", L"Death", L"Yell", L"Yell", L"Death", L"Death", L"Death", L"Moonless Gown", L"Moonless Gown", L"Summon", L"Slash Attack", 
+				L"Pierce Attack", L"Strike Attack", L"Yell", L"Pierce Attack", L"Fire Attack", L"Almighty Attack", L"Bash", L"Assault Dive", 
+				L"Kill Rush", L"Swift Strike", L"Sonic Punch", L"Heat Wave", L"Gigantic Fist", L"Akasha Arts", L"God\'s Hand", L"Cleave", L"Fatal End", 
+				L"Getsu-ei", L"Zan-ei", L"Mighty Swing", L"Double Fangs", L"Blade of Fury", L"Deathbound", L"Tempest Slash", L"Heaven\'s Blade", 
+				L"Pralaya", L"Power Slash", L"Gale Slash", L"Brave Blade", L"Herculean Strike", L"Vicious Strike", L"Single Shot", L"Twin Shot", 
+				L"Holy Arrow", L"Torrent Shot", L"Arrow Rain", L"Myriad Arrows", L"Primal Force", L"Vorpal Blade", L"Weary Thrust", L"Cruel Attack", 
+				L"Vile Assault", L"Poison Arrow", L"Weary Thrust", L"Vorpal Blade", L"0x097", L"0x098", L"0x099", L"0x09A", L"0x09B", L"0x09C", 
+				L"0x09D", L"0x09E", L"0x09F", L"+charm(low)", L"+charm(med)", L"+charm(high)", L"+distress(low)", L"+distress(med)", L"+distress(high)", 
+				L"+panic(low)", L"+panic(med)", L"+panic(high)", L"+fear(low)", L"+fear(med)", L"+fear(high)", L"+rage(low)", L"+rage(med)", 
+				L"+rage(high)", L"+poison(low)", L"0x0B0", L"0x0B1", L"0x0B2", L"0x0B3", L"0x0B4", L"0x0B5", L"0x0B6", L"0x0B7", L"0x0B8", L"0x0B9", 
+				L"0x0BA", L"0x0BB", L"0x0BC", L"0x0BD", L"0x0BE", L"0x0BF", L"Dia", L"Diarama", L"Diarahan", L"Media", L"Mediarama", L"Mediarahan", 
+				L"Salvation", L"Patra", L"Me Patra", L"Re Patra", L"Posumudi", L"Amrita", L"Recarm", L"Samarecarm", L"Tarunda", L"Matarunda", 
+				L"Sukunda", L"Masukunda", L"Rakunda", L"Marakunda", L"Dekunda", L"0x0D5", L"Tarukaja", L"Matarukaja", L"Sukukaja", L"Masukukaja", 
+				L"Rakukaja", L"Marakukaja", L"Power Charge", L"Mind Charge", L"0x0DE", L"Dekaja", L"Tetrakarn", L"Makarakarn", L"Rebellion", 
+				L"Revolution", L"0x0E4", L"Fire Break", L"Ice Break", L"Wind Break", L"Elec Break", L"Traesto", L"Trafuri", L"Healing Wave", 
+				L"Recarmdra", L"Charmdi", L"Enradi", L"0x0EF", L"0x0F0", L"0x0F1", L"0x0F2", L"0x0F3", L"0x0F4", L"0x0F5", L"0x0F6", L"0x0F7", 
+				L"0x0F8", L"0x0F9", L"0x0FA", L"0x0FB", L"0x0FC", L"0x0FD", L"0x0FE", L"0x0FF", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Jack Brothers", L"Ardhanari", L"Trickster", 
+				L"Infinity", L"Valhalla", L"Summer Dream", L"Armageddon", L"Cadenza", L"Scarlet Havoc", L"Frolic", L"Dreamfest", L"King and I", 
+				L"Best Friends", L"Shadow Hound", L"Thunder Call", L"Last Judge", L"Raktapaksha", L"Justice", L"Trickster", L"0x123", L"0x124", 
+				L"Primal Darkness", L"Dark Embrace", L"Primal Darkness", L"Primal Darkness", L"0x129", L"0x12A", L"0x12B", L"0x12C", L"0x12D", 
+				L"0x12E", L"0x12F", L"Pierce Attack", L"Fire Attack", L"Summon", L"Summon", L"Armed&Ready", L"Sacrifice", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Night Queen", 
+				L"All-Out 2", L"All-Out 3", L"All-Out 4", L"Plume of Dusk", L"Analyze", L"Oracle", L"Full Analysis", L"Oracle", L"Oracle", L"Oracle", 
+				L"Oracle", L"Oracle", L"All-Out 2L", L"All-Out 3L", L"All-Out 4L", L"Support Scan", L"Third Eye", L"Mind DJ", L"DJ Queen", L"Escape Route", 
+				L"Healing Wave", L"Summon", L"Orgia Mode", L"Great Seal", L"0x158", L"0x159", L"Ice Attack", L"Wind Attack", L"Elec Attack", 
+				L"Fire Attack", L"Pierce Attack", L"Strike Attack", L"Summon", L"Summon", L"Summon", L"Prophecy of Ruin", L"Heartbreaker", L"Unite", 
+				L"Separate", L"Pierce Attack", L"Pierce Attack", L"Samarecarm", L"Samarecarm", L"Charge", L"Giga Spark", L"Wheel of Fortune", 
+				L"Wheel of Fortune", L"Wheel of Fortune", L"Paradigm Shift", L"Wheel of Fortune", L"Wheel of Fortune", L"E Attack Up", L"P Attack Up", 
+				L"E Attack Down", L"P Attack Down", L"E Defense Up", L"P Defense Up", L"E Defense Down", L"P Defense Down", L"E Panic", L"P Panic", 
+				L"E Rage", L"P Rage", L"E Distress", L"P Distress", L"E Fear", L"P Fear", L"E Damage Low", L"P Damage Low", L"E Damage Mid", 
+				L"P Damage Mid", L"E Damage High", L"P Damage High", L"E Heal", L"P Heal", L"Almighty Attack", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Band Aid", L"Medicine", L"Bead", L"Snuff Soul", L"Chewing Soul", L"Precious Egg", L"Soma", 
+				L"0x197", L"0x198", L"0x199", L"0x19A", L"Muscle Drink", L"Odd Morsel", L"Rancid Gravy", L"Powerful Drug", L"Cold Medicine", 
+				L"Energy Drink", L"0x1A1", L"0x1A2", L"0x1A3", L"0x1A4", L"0x1A5", L"0x1A6", L"0x1A7", L"0x1A8", L"0x1A9", L"0x1AA", L"0x1AB", 
+				L"0x1AC", L"0x1AD", L"0x1AE", L"0x1AF", L"0x1B0", L"0x1B1", L"0x1B2", L"0x1B3", L"0x1B4", L"0x1B5", L"Homunculus", L"Plume of Dusk", 
+				L"0x1B8", L"0x1B9", L"0x1BA", L"0x1BB", L"0x1BC", L"0x1BD", L"0x1BE", L"0x1BF", L"0x1C0", L"0x1C1", L"0x1C2", L"0x1C3", L"0x1C4", 
+				L"0x1C5", L"0x1C6", L"0x1C7", L"0x1C8", L"0x1C9", L"0x1CA", L"0x1CB", L"0x1CC", L"0x1CD", L"0x1CE", L"0x1CF", L"Resist Slash", 
+				L"Null Slash", L"Repel Slash", L"Absorb Slash", L"Resist Strike", L"Null Strike", L"Repel Strike", L"Absorb Strike", L"Resist Pierce", 
+				L"Null Pierce", L"Repel Pierce", L"Absorb Pierce", L"Resist Fire", L"Null Fire", L"Repel Fire", L"Absorb Fire", L"Resist Ice", 
+				L"Null Ice", L"Repel Ice", L"Absorb Ice", L"Resist Elec", L"Null Elec", L"Repel Elec", L"Absorb Elec", L"Resist Wind", L"Null Wind", 
+				L"Repel Wind", L"Absorb Wind", L"Resist Light", L"Null Light", L"Repel Light", L"Resist Dark", L"Null Dark", L"Repel Dark", L"Null Charm", 
+				L"Null Distress", L"Null Panic", L"Null Fear", L"Null Rage", L"Null Freeze", L"Null Shock", L"Null Poison", L"Unshaken Will", 
+				L"Masakados", L"Dodge Slash", L"Evade Slash", L"Dodge Strike", L"Evade Strike", L"Dodge Pierce", L"Evade Pierce", L"Dodge Fire", 
+				L"Evade Fire", L"Dodge Ice", L"Evade Ice", L"Dodge Wind", L"Evade Wind", L"Dodge Elec", L"Evade Elec", L"Stamina Up 1", L"Stamina Up 2", 
+				L"Stamina Up 3", L"0x20D", L"Premonition", L"Angelic Grace", L"Fire Boost", L"Fire Amp", L"Ice Boost", L"Ice Amp", L"Elec Boost", 
+				L"Elec Amp", L"Wind Boost", L"Wind Amp", L"Fast Retreat", L"HP Up 1", L"HP Up 2", L"HP Up 3", L"SP Up 1", L"SP Up 2", L"SP Up 3", 
+				L"Raging Tiger", L"Counter", L"Counterstrike", L"High Counter", L"Regenerate 1", L"Regenerate 2", L"Regenerate 3", L"Invigorate 1", 
+				L"Invigorate 2", L"Invigorate 3", L"Growth 1", L"Growth 2", L"Growth 3", L"0x22C", L"Auto-Tarukaja", L"Auto-Rakukaja", L"Auto-Sukukaja", 
+				L"Alertness", L"Sharp Student", L"Apt Pupil", L"Ali Dance", L"Firm Stance", L"Spell Master", L"Arms Master", L"HP Up", L"SP Up", 
+				L"0x239", L"Divine Grace", L"Endure", L"Enduring Soul", L"Heavy Master", L"Magic Skill Up", L"Phys Skill Up", L"0x240", L"0x240", 
+				L"0x240", L"0x243", L"Rosary", L"Prayer Beads", L"Spear Master", L"Bow Master", L"1hSwd Master", L"2hSwd Master", L"Fist Master", 
+				L"Survive Light", L"Survive Dark", L"Auto-Maraku", L"Auto-Mataru", L"Auto-Masuku", L"Charm Boost", L"Poison Boost", L"Distress Boost", 
+				L"Panic Boost", L"Fear Boost", L"Rage Boost", L"Ailment Boost", L"Hama Boost", L"Mudo Boost", L"Endure Light", L"Endure Dark", 
+				L"0x25B", L"0x25C", L"Cool Breeze", L"Victory Cry", L"Spring of Life", L"Spring of Life", L"For Debug", L"Fast-Heal", L"Insta-Heal", 
+				L"Resist Charm", L"Resist Distress", L"Resist Panic", L"Resist Fear", L"Resist Rage", L"Resist Freeze", L"Resist Shock", L"Resist Poison", 
+				L"HP Up High", L"SP Up High", L"0x26E", L"0x26F"});
+			this->persona1_magic7->Location = System::Drawing::Point(9, 384);
+			this->persona1_magic7->Name = L"persona1_magic7";
+			this->persona1_magic7->Size = System::Drawing::Size(121, 21);
+			this->persona1_magic7->TabIndex = 38;
+			this->persona1_magic7->SelectedIndexChanged += gcnew System::EventHandler(this, &Form1::persona1_magic7_SelectedIndexChanged);
+			// 
+			// persona1_magic6
+			// 
+			this->persona1_magic6->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->persona1_magic6->FormattingEnabled = true;
+			this->persona1_magic6->Items->AddRange(gcnew cli::array< System::Object^  >(624) {L"Slash Attack", L"Agi", L"Agilao", L"Agidyne", 
+				L"Maragi", L"Maragion", L"Maragidyne", L"Maralagidyne", L"0x008", L"Ragnarok", L"Garu", L"Garula", L"Garudyne", L"Magaru", L"Magarula", 
+				L"Magarudyne", L"0x010", L"0x011", L"Panta Rhei", L"Bufu", L"Bufula", L"Bufudyne", L"Mabufu", L"Mabufula", L"Mabufudyne", L"0x019", 
+				L"0x01A", L"Niflheim", L"Zio", L"Zionga", L"Ziodyne", L"Mazio", L"Mazionga", L"Maziodyne", L"0x022", L"0x023", L"Thunder Reign", 
+				L"Megido", L"Megidola", L"Megidolaon", L"Last Resort", L"0x029", L"0x02A", L"Black Viper", L"Morning Star", L"Hama", L"Mahama", 
+				L"Hamaon", L"Mahamaon", L"0x031", L"Samsara", L"Mudo", L"Mamudo", L"Mudoon", L"Mamudoon", L"0x037", L"Die for Me!", L"Marin Karin", 
+				L"Sexy Dance", L"Bewilder", L"Eerie Sound", L"Pulinpa", L"Tentarafoo", L"Evil Touch", L"Evil Smile", L"Ghastly Wail", L"Provoke", 
+				L"Infuriate", L"Poisma", L"Poison Mist", L"Virus Breath", L"0x047", L"0x048", L"Foul Breath", L"Stagnant Air", L"Life Drain", 
+				L"Spirit Drain", L"0x04D", L"0x04E", L"0x04F", L"Maragidyne", L"Magarudyne", L"Mabufudyne", L"Maziodyne", L"Megidolaon", L"Mahamaon", 
+				L"Mamudoon", L"Sexy Dance", L"Eerie Sound", L"Tentarafoo", L"Evil Smile", L"Poison Mist", L"Holy Arrow", L"Life Drain", L"Spirit Drain", 
+				L"0x05F", L"Death", L"Yell", L"Yell", L"Death", L"Death", L"Death", L"Moonless Gown", L"Moonless Gown", L"Summon", L"Slash Attack", 
+				L"Pierce Attack", L"Strike Attack", L"Yell", L"Pierce Attack", L"Fire Attack", L"Almighty Attack", L"Bash", L"Assault Dive", 
+				L"Kill Rush", L"Swift Strike", L"Sonic Punch", L"Heat Wave", L"Gigantic Fist", L"Akasha Arts", L"God\'s Hand", L"Cleave", L"Fatal End", 
+				L"Getsu-ei", L"Zan-ei", L"Mighty Swing", L"Double Fangs", L"Blade of Fury", L"Deathbound", L"Tempest Slash", L"Heaven\'s Blade", 
+				L"Pralaya", L"Power Slash", L"Gale Slash", L"Brave Blade", L"Herculean Strike", L"Vicious Strike", L"Single Shot", L"Twin Shot", 
+				L"Holy Arrow", L"Torrent Shot", L"Arrow Rain", L"Myriad Arrows", L"Primal Force", L"Vorpal Blade", L"Weary Thrust", L"Cruel Attack", 
+				L"Vile Assault", L"Poison Arrow", L"Weary Thrust", L"Vorpal Blade", L"0x097", L"0x098", L"0x099", L"0x09A", L"0x09B", L"0x09C", 
+				L"0x09D", L"0x09E", L"0x09F", L"+charm(low)", L"+charm(med)", L"+charm(high)", L"+distress(low)", L"+distress(med)", L"+distress(high)", 
+				L"+panic(low)", L"+panic(med)", L"+panic(high)", L"+fear(low)", L"+fear(med)", L"+fear(high)", L"+rage(low)", L"+rage(med)", 
+				L"+rage(high)", L"+poison(low)", L"0x0B0", L"0x0B1", L"0x0B2", L"0x0B3", L"0x0B4", L"0x0B5", L"0x0B6", L"0x0B7", L"0x0B8", L"0x0B9", 
+				L"0x0BA", L"0x0BB", L"0x0BC", L"0x0BD", L"0x0BE", L"0x0BF", L"Dia", L"Diarama", L"Diarahan", L"Media", L"Mediarama", L"Mediarahan", 
+				L"Salvation", L"Patra", L"Me Patra", L"Re Patra", L"Posumudi", L"Amrita", L"Recarm", L"Samarecarm", L"Tarunda", L"Matarunda", 
+				L"Sukunda", L"Masukunda", L"Rakunda", L"Marakunda", L"Dekunda", L"0x0D5", L"Tarukaja", L"Matarukaja", L"Sukukaja", L"Masukukaja", 
+				L"Rakukaja", L"Marakukaja", L"Power Charge", L"Mind Charge", L"0x0DE", L"Dekaja", L"Tetrakarn", L"Makarakarn", L"Rebellion", 
+				L"Revolution", L"0x0E4", L"Fire Break", L"Ice Break", L"Wind Break", L"Elec Break", L"Traesto", L"Trafuri", L"Healing Wave", 
+				L"Recarmdra", L"Charmdi", L"Enradi", L"0x0EF", L"0x0F0", L"0x0F1", L"0x0F2", L"0x0F3", L"0x0F4", L"0x0F5", L"0x0F6", L"0x0F7", 
+				L"0x0F8", L"0x0F9", L"0x0FA", L"0x0FB", L"0x0FC", L"0x0FD", L"0x0FE", L"0x0FF", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Jack Brothers", L"Ardhanari", L"Trickster", 
+				L"Infinity", L"Valhalla", L"Summer Dream", L"Armageddon", L"Cadenza", L"Scarlet Havoc", L"Frolic", L"Dreamfest", L"King and I", 
+				L"Best Friends", L"Shadow Hound", L"Thunder Call", L"Last Judge", L"Raktapaksha", L"Justice", L"Trickster", L"0x123", L"0x124", 
+				L"Primal Darkness", L"Dark Embrace", L"Primal Darkness", L"Primal Darkness", L"0x129", L"0x12A", L"0x12B", L"0x12C", L"0x12D", 
+				L"0x12E", L"0x12F", L"Pierce Attack", L"Fire Attack", L"Summon", L"Summon", L"Armed&Ready", L"Sacrifice", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Night Queen", 
+				L"All-Out 2", L"All-Out 3", L"All-Out 4", L"Plume of Dusk", L"Analyze", L"Oracle", L"Full Analysis", L"Oracle", L"Oracle", L"Oracle", 
+				L"Oracle", L"Oracle", L"All-Out 2L", L"All-Out 3L", L"All-Out 4L", L"Support Scan", L"Third Eye", L"Mind DJ", L"DJ Queen", L"Escape Route", 
+				L"Healing Wave", L"Summon", L"Orgia Mode", L"Great Seal", L"0x158", L"0x159", L"Ice Attack", L"Wind Attack", L"Elec Attack", 
+				L"Fire Attack", L"Pierce Attack", L"Strike Attack", L"Summon", L"Summon", L"Summon", L"Prophecy of Ruin", L"Heartbreaker", L"Unite", 
+				L"Separate", L"Pierce Attack", L"Pierce Attack", L"Samarecarm", L"Samarecarm", L"Charge", L"Giga Spark", L"Wheel of Fortune", 
+				L"Wheel of Fortune", L"Wheel of Fortune", L"Paradigm Shift", L"Wheel of Fortune", L"Wheel of Fortune", L"E Attack Up", L"P Attack Up", 
+				L"E Attack Down", L"P Attack Down", L"E Defense Up", L"P Defense Up", L"E Defense Down", L"P Defense Down", L"E Panic", L"P Panic", 
+				L"E Rage", L"P Rage", L"E Distress", L"P Distress", L"E Fear", L"P Fear", L"E Damage Low", L"P Damage Low", L"E Damage Mid", 
+				L"P Damage Mid", L"E Damage High", L"P Damage High", L"E Heal", L"P Heal", L"Almighty Attack", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Band Aid", L"Medicine", L"Bead", L"Snuff Soul", L"Chewing Soul", L"Precious Egg", L"Soma", 
+				L"0x197", L"0x198", L"0x199", L"0x19A", L"Muscle Drink", L"Odd Morsel", L"Rancid Gravy", L"Powerful Drug", L"Cold Medicine", 
+				L"Energy Drink", L"0x1A1", L"0x1A2", L"0x1A3", L"0x1A4", L"0x1A5", L"0x1A6", L"0x1A7", L"0x1A8", L"0x1A9", L"0x1AA", L"0x1AB", 
+				L"0x1AC", L"0x1AD", L"0x1AE", L"0x1AF", L"0x1B0", L"0x1B1", L"0x1B2", L"0x1B3", L"0x1B4", L"0x1B5", L"Homunculus", L"Plume of Dusk", 
+				L"0x1B8", L"0x1B9", L"0x1BA", L"0x1BB", L"0x1BC", L"0x1BD", L"0x1BE", L"0x1BF", L"0x1C0", L"0x1C1", L"0x1C2", L"0x1C3", L"0x1C4", 
+				L"0x1C5", L"0x1C6", L"0x1C7", L"0x1C8", L"0x1C9", L"0x1CA", L"0x1CB", L"0x1CC", L"0x1CD", L"0x1CE", L"0x1CF", L"Resist Slash", 
+				L"Null Slash", L"Repel Slash", L"Absorb Slash", L"Resist Strike", L"Null Strike", L"Repel Strike", L"Absorb Strike", L"Resist Pierce", 
+				L"Null Pierce", L"Repel Pierce", L"Absorb Pierce", L"Resist Fire", L"Null Fire", L"Repel Fire", L"Absorb Fire", L"Resist Ice", 
+				L"Null Ice", L"Repel Ice", L"Absorb Ice", L"Resist Elec", L"Null Elec", L"Repel Elec", L"Absorb Elec", L"Resist Wind", L"Null Wind", 
+				L"Repel Wind", L"Absorb Wind", L"Resist Light", L"Null Light", L"Repel Light", L"Resist Dark", L"Null Dark", L"Repel Dark", L"Null Charm", 
+				L"Null Distress", L"Null Panic", L"Null Fear", L"Null Rage", L"Null Freeze", L"Null Shock", L"Null Poison", L"Unshaken Will", 
+				L"Masakados", L"Dodge Slash", L"Evade Slash", L"Dodge Strike", L"Evade Strike", L"Dodge Pierce", L"Evade Pierce", L"Dodge Fire", 
+				L"Evade Fire", L"Dodge Ice", L"Evade Ice", L"Dodge Wind", L"Evade Wind", L"Dodge Elec", L"Evade Elec", L"Stamina Up 1", L"Stamina Up 2", 
+				L"Stamina Up 3", L"0x20D", L"Premonition", L"Angelic Grace", L"Fire Boost", L"Fire Amp", L"Ice Boost", L"Ice Amp", L"Elec Boost", 
+				L"Elec Amp", L"Wind Boost", L"Wind Amp", L"Fast Retreat", L"HP Up 1", L"HP Up 2", L"HP Up 3", L"SP Up 1", L"SP Up 2", L"SP Up 3", 
+				L"Raging Tiger", L"Counter", L"Counterstrike", L"High Counter", L"Regenerate 1", L"Regenerate 2", L"Regenerate 3", L"Invigorate 1", 
+				L"Invigorate 2", L"Invigorate 3", L"Growth 1", L"Growth 2", L"Growth 3", L"0x22C", L"Auto-Tarukaja", L"Auto-Rakukaja", L"Auto-Sukukaja", 
+				L"Alertness", L"Sharp Student", L"Apt Pupil", L"Ali Dance", L"Firm Stance", L"Spell Master", L"Arms Master", L"HP Up", L"SP Up", 
+				L"0x239", L"Divine Grace", L"Endure", L"Enduring Soul", L"Heavy Master", L"Magic Skill Up", L"Phys Skill Up", L"0x240", L"0x240", 
+				L"0x240", L"0x243", L"Rosary", L"Prayer Beads", L"Spear Master", L"Bow Master", L"1hSwd Master", L"2hSwd Master", L"Fist Master", 
+				L"Survive Light", L"Survive Dark", L"Auto-Maraku", L"Auto-Mataru", L"Auto-Masuku", L"Charm Boost", L"Poison Boost", L"Distress Boost", 
+				L"Panic Boost", L"Fear Boost", L"Rage Boost", L"Ailment Boost", L"Hama Boost", L"Mudo Boost", L"Endure Light", L"Endure Dark", 
+				L"0x25B", L"0x25C", L"Cool Breeze", L"Victory Cry", L"Spring of Life", L"Spring of Life", L"For Debug", L"Fast-Heal", L"Insta-Heal", 
+				L"Resist Charm", L"Resist Distress", L"Resist Panic", L"Resist Fear", L"Resist Rage", L"Resist Freeze", L"Resist Shock", L"Resist Poison", 
+				L"HP Up High", L"SP Up High", L"0x26E", L"0x26F"});
+			this->persona1_magic6->Location = System::Drawing::Point(9, 357);
+			this->persona1_magic6->Name = L"persona1_magic6";
+			this->persona1_magic6->Size = System::Drawing::Size(121, 21);
+			this->persona1_magic6->TabIndex = 37;
+			this->persona1_magic6->SelectedIndexChanged += gcnew System::EventHandler(this, &Form1::persona1_magic6_SelectedIndexChanged);
+			// 
+			// persona1_magic5
+			// 
+			this->persona1_magic5->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->persona1_magic5->FormattingEnabled = true;
+			this->persona1_magic5->Items->AddRange(gcnew cli::array< System::Object^  >(624) {L"Slash Attack", L"Agi", L"Agilao", L"Agidyne", 
+				L"Maragi", L"Maragion", L"Maragidyne", L"Maralagidyne", L"0x008", L"Ragnarok", L"Garu", L"Garula", L"Garudyne", L"Magaru", L"Magarula", 
+				L"Magarudyne", L"0x010", L"0x011", L"Panta Rhei", L"Bufu", L"Bufula", L"Bufudyne", L"Mabufu", L"Mabufula", L"Mabufudyne", L"0x019", 
+				L"0x01A", L"Niflheim", L"Zio", L"Zionga", L"Ziodyne", L"Mazio", L"Mazionga", L"Maziodyne", L"0x022", L"0x023", L"Thunder Reign", 
+				L"Megido", L"Megidola", L"Megidolaon", L"Last Resort", L"0x029", L"0x02A", L"Black Viper", L"Morning Star", L"Hama", L"Mahama", 
+				L"Hamaon", L"Mahamaon", L"0x031", L"Samsara", L"Mudo", L"Mamudo", L"Mudoon", L"Mamudoon", L"0x037", L"Die for Me!", L"Marin Karin", 
+				L"Sexy Dance", L"Bewilder", L"Eerie Sound", L"Pulinpa", L"Tentarafoo", L"Evil Touch", L"Evil Smile", L"Ghastly Wail", L"Provoke", 
+				L"Infuriate", L"Poisma", L"Poison Mist", L"Virus Breath", L"0x047", L"0x048", L"Foul Breath", L"Stagnant Air", L"Life Drain", 
+				L"Spirit Drain", L"0x04D", L"0x04E", L"0x04F", L"Maragidyne", L"Magarudyne", L"Mabufudyne", L"Maziodyne", L"Megidolaon", L"Mahamaon", 
+				L"Mamudoon", L"Sexy Dance", L"Eerie Sound", L"Tentarafoo", L"Evil Smile", L"Poison Mist", L"Holy Arrow", L"Life Drain", L"Spirit Drain", 
+				L"0x05F", L"Death", L"Yell", L"Yell", L"Death", L"Death", L"Death", L"Moonless Gown", L"Moonless Gown", L"Summon", L"Slash Attack", 
+				L"Pierce Attack", L"Strike Attack", L"Yell", L"Pierce Attack", L"Fire Attack", L"Almighty Attack", L"Bash", L"Assault Dive", 
+				L"Kill Rush", L"Swift Strike", L"Sonic Punch", L"Heat Wave", L"Gigantic Fist", L"Akasha Arts", L"God\'s Hand", L"Cleave", L"Fatal End", 
+				L"Getsu-ei", L"Zan-ei", L"Mighty Swing", L"Double Fangs", L"Blade of Fury", L"Deathbound", L"Tempest Slash", L"Heaven\'s Blade", 
+				L"Pralaya", L"Power Slash", L"Gale Slash", L"Brave Blade", L"Herculean Strike", L"Vicious Strike", L"Single Shot", L"Twin Shot", 
+				L"Holy Arrow", L"Torrent Shot", L"Arrow Rain", L"Myriad Arrows", L"Primal Force", L"Vorpal Blade", L"Weary Thrust", L"Cruel Attack", 
+				L"Vile Assault", L"Poison Arrow", L"Weary Thrust", L"Vorpal Blade", L"0x097", L"0x098", L"0x099", L"0x09A", L"0x09B", L"0x09C", 
+				L"0x09D", L"0x09E", L"0x09F", L"+charm(low)", L"+charm(med)", L"+charm(high)", L"+distress(low)", L"+distress(med)", L"+distress(high)", 
+				L"+panic(low)", L"+panic(med)", L"+panic(high)", L"+fear(low)", L"+fear(med)", L"+fear(high)", L"+rage(low)", L"+rage(med)", 
+				L"+rage(high)", L"+poison(low)", L"0x0B0", L"0x0B1", L"0x0B2", L"0x0B3", L"0x0B4", L"0x0B5", L"0x0B6", L"0x0B7", L"0x0B8", L"0x0B9", 
+				L"0x0BA", L"0x0BB", L"0x0BC", L"0x0BD", L"0x0BE", L"0x0BF", L"Dia", L"Diarama", L"Diarahan", L"Media", L"Mediarama", L"Mediarahan", 
+				L"Salvation", L"Patra", L"Me Patra", L"Re Patra", L"Posumudi", L"Amrita", L"Recarm", L"Samarecarm", L"Tarunda", L"Matarunda", 
+				L"Sukunda", L"Masukunda", L"Rakunda", L"Marakunda", L"Dekunda", L"0x0D5", L"Tarukaja", L"Matarukaja", L"Sukukaja", L"Masukukaja", 
+				L"Rakukaja", L"Marakukaja", L"Power Charge", L"Mind Charge", L"0x0DE", L"Dekaja", L"Tetrakarn", L"Makarakarn", L"Rebellion", 
+				L"Revolution", L"0x0E4", L"Fire Break", L"Ice Break", L"Wind Break", L"Elec Break", L"Traesto", L"Trafuri", L"Healing Wave", 
+				L"Recarmdra", L"Charmdi", L"Enradi", L"0x0EF", L"0x0F0", L"0x0F1", L"0x0F2", L"0x0F3", L"0x0F4", L"0x0F5", L"0x0F6", L"0x0F7", 
+				L"0x0F8", L"0x0F9", L"0x0FA", L"0x0FB", L"0x0FC", L"0x0FD", L"0x0FE", L"0x0FF", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Jack Brothers", L"Ardhanari", L"Trickster", 
+				L"Infinity", L"Valhalla", L"Summer Dream", L"Armageddon", L"Cadenza", L"Scarlet Havoc", L"Frolic", L"Dreamfest", L"King and I", 
+				L"Best Friends", L"Shadow Hound", L"Thunder Call", L"Last Judge", L"Raktapaksha", L"Justice", L"Trickster", L"0x123", L"0x124", 
+				L"Primal Darkness", L"Dark Embrace", L"Primal Darkness", L"Primal Darkness", L"0x129", L"0x12A", L"0x12B", L"0x12C", L"0x12D", 
+				L"0x12E", L"0x12F", L"Pierce Attack", L"Fire Attack", L"Summon", L"Summon", L"Armed&Ready", L"Sacrifice", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Night Queen", 
+				L"All-Out 2", L"All-Out 3", L"All-Out 4", L"Plume of Dusk", L"Analyze", L"Oracle", L"Full Analysis", L"Oracle", L"Oracle", L"Oracle", 
+				L"Oracle", L"Oracle", L"All-Out 2L", L"All-Out 3L", L"All-Out 4L", L"Support Scan", L"Third Eye", L"Mind DJ", L"DJ Queen", L"Escape Route", 
+				L"Healing Wave", L"Summon", L"Orgia Mode", L"Great Seal", L"0x158", L"0x159", L"Ice Attack", L"Wind Attack", L"Elec Attack", 
+				L"Fire Attack", L"Pierce Attack", L"Strike Attack", L"Summon", L"Summon", L"Summon", L"Prophecy of Ruin", L"Heartbreaker", L"Unite", 
+				L"Separate", L"Pierce Attack", L"Pierce Attack", L"Samarecarm", L"Samarecarm", L"Charge", L"Giga Spark", L"Wheel of Fortune", 
+				L"Wheel of Fortune", L"Wheel of Fortune", L"Paradigm Shift", L"Wheel of Fortune", L"Wheel of Fortune", L"E Attack Up", L"P Attack Up", 
+				L"E Attack Down", L"P Attack Down", L"E Defense Up", L"P Defense Up", L"E Defense Down", L"P Defense Down", L"E Panic", L"P Panic", 
+				L"E Rage", L"P Rage", L"E Distress", L"P Distress", L"E Fear", L"P Fear", L"E Damage Low", L"P Damage Low", L"E Damage Mid", 
+				L"P Damage Mid", L"E Damage High", L"P Damage High", L"E Heal", L"P Heal", L"Almighty Attack", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Band Aid", L"Medicine", L"Bead", L"Snuff Soul", L"Chewing Soul", L"Precious Egg", L"Soma", 
+				L"0x197", L"0x198", L"0x199", L"0x19A", L"Muscle Drink", L"Odd Morsel", L"Rancid Gravy", L"Powerful Drug", L"Cold Medicine", 
+				L"Energy Drink", L"0x1A1", L"0x1A2", L"0x1A3", L"0x1A4", L"0x1A5", L"0x1A6", L"0x1A7", L"0x1A8", L"0x1A9", L"0x1AA", L"0x1AB", 
+				L"0x1AC", L"0x1AD", L"0x1AE", L"0x1AF", L"0x1B0", L"0x1B1", L"0x1B2", L"0x1B3", L"0x1B4", L"0x1B5", L"Homunculus", L"Plume of Dusk", 
+				L"0x1B8", L"0x1B9", L"0x1BA", L"0x1BB", L"0x1BC", L"0x1BD", L"0x1BE", L"0x1BF", L"0x1C0", L"0x1C1", L"0x1C2", L"0x1C3", L"0x1C4", 
+				L"0x1C5", L"0x1C6", L"0x1C7", L"0x1C8", L"0x1C9", L"0x1CA", L"0x1CB", L"0x1CC", L"0x1CD", L"0x1CE", L"0x1CF", L"Resist Slash", 
+				L"Null Slash", L"Repel Slash", L"Absorb Slash", L"Resist Strike", L"Null Strike", L"Repel Strike", L"Absorb Strike", L"Resist Pierce", 
+				L"Null Pierce", L"Repel Pierce", L"Absorb Pierce", L"Resist Fire", L"Null Fire", L"Repel Fire", L"Absorb Fire", L"Resist Ice", 
+				L"Null Ice", L"Repel Ice", L"Absorb Ice", L"Resist Elec", L"Null Elec", L"Repel Elec", L"Absorb Elec", L"Resist Wind", L"Null Wind", 
+				L"Repel Wind", L"Absorb Wind", L"Resist Light", L"Null Light", L"Repel Light", L"Resist Dark", L"Null Dark", L"Repel Dark", L"Null Charm", 
+				L"Null Distress", L"Null Panic", L"Null Fear", L"Null Rage", L"Null Freeze", L"Null Shock", L"Null Poison", L"Unshaken Will", 
+				L"Masakados", L"Dodge Slash", L"Evade Slash", L"Dodge Strike", L"Evade Strike", L"Dodge Pierce", L"Evade Pierce", L"Dodge Fire", 
+				L"Evade Fire", L"Dodge Ice", L"Evade Ice", L"Dodge Wind", L"Evade Wind", L"Dodge Elec", L"Evade Elec", L"Stamina Up 1", L"Stamina Up 2", 
+				L"Stamina Up 3", L"0x20D", L"Premonition", L"Angelic Grace", L"Fire Boost", L"Fire Amp", L"Ice Boost", L"Ice Amp", L"Elec Boost", 
+				L"Elec Amp", L"Wind Boost", L"Wind Amp", L"Fast Retreat", L"HP Up 1", L"HP Up 2", L"HP Up 3", L"SP Up 1", L"SP Up 2", L"SP Up 3", 
+				L"Raging Tiger", L"Counter", L"Counterstrike", L"High Counter", L"Regenerate 1", L"Regenerate 2", L"Regenerate 3", L"Invigorate 1", 
+				L"Invigorate 2", L"Invigorate 3", L"Growth 1", L"Growth 2", L"Growth 3", L"0x22C", L"Auto-Tarukaja", L"Auto-Rakukaja", L"Auto-Sukukaja", 
+				L"Alertness", L"Sharp Student", L"Apt Pupil", L"Ali Dance", L"Firm Stance", L"Spell Master", L"Arms Master", L"HP Up", L"SP Up", 
+				L"0x239", L"Divine Grace", L"Endure", L"Enduring Soul", L"Heavy Master", L"Magic Skill Up", L"Phys Skill Up", L"0x240", L"0x240", 
+				L"0x240", L"0x243", L"Rosary", L"Prayer Beads", L"Spear Master", L"Bow Master", L"1hSwd Master", L"2hSwd Master", L"Fist Master", 
+				L"Survive Light", L"Survive Dark", L"Auto-Maraku", L"Auto-Mataru", L"Auto-Masuku", L"Charm Boost", L"Poison Boost", L"Distress Boost", 
+				L"Panic Boost", L"Fear Boost", L"Rage Boost", L"Ailment Boost", L"Hama Boost", L"Mudo Boost", L"Endure Light", L"Endure Dark", 
+				L"0x25B", L"0x25C", L"Cool Breeze", L"Victory Cry", L"Spring of Life", L"Spring of Life", L"For Debug", L"Fast-Heal", L"Insta-Heal", 
+				L"Resist Charm", L"Resist Distress", L"Resist Panic", L"Resist Fear", L"Resist Rage", L"Resist Freeze", L"Resist Shock", L"Resist Poison", 
+				L"HP Up High", L"SP Up High", L"0x26E", L"0x26F"});
+			this->persona1_magic5->Location = System::Drawing::Point(9, 330);
+			this->persona1_magic5->Name = L"persona1_magic5";
+			this->persona1_magic5->Size = System::Drawing::Size(121, 21);
+			this->persona1_magic5->TabIndex = 36;
+			this->persona1_magic5->SelectedIndexChanged += gcnew System::EventHandler(this, &Form1::persona1_magic5_SelectedIndexChanged);
+			// 
+			// persona1_magic4
+			// 
+			this->persona1_magic4->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->persona1_magic4->FormattingEnabled = true;
+			this->persona1_magic4->Items->AddRange(gcnew cli::array< System::Object^  >(624) {L"Slash Attack", L"Agi", L"Agilao", L"Agidyne", 
+				L"Maragi", L"Maragion", L"Maragidyne", L"Maralagidyne", L"0x008", L"Ragnarok", L"Garu", L"Garula", L"Garudyne", L"Magaru", L"Magarula", 
+				L"Magarudyne", L"0x010", L"0x011", L"Panta Rhei", L"Bufu", L"Bufula", L"Bufudyne", L"Mabufu", L"Mabufula", L"Mabufudyne", L"0x019", 
+				L"0x01A", L"Niflheim", L"Zio", L"Zionga", L"Ziodyne", L"Mazio", L"Mazionga", L"Maziodyne", L"0x022", L"0x023", L"Thunder Reign", 
+				L"Megido", L"Megidola", L"Megidolaon", L"Last Resort", L"0x029", L"0x02A", L"Black Viper", L"Morning Star", L"Hama", L"Mahama", 
+				L"Hamaon", L"Mahamaon", L"0x031", L"Samsara", L"Mudo", L"Mamudo", L"Mudoon", L"Mamudoon", L"0x037", L"Die for Me!", L"Marin Karin", 
+				L"Sexy Dance", L"Bewilder", L"Eerie Sound", L"Pulinpa", L"Tentarafoo", L"Evil Touch", L"Evil Smile", L"Ghastly Wail", L"Provoke", 
+				L"Infuriate", L"Poisma", L"Poison Mist", L"Virus Breath", L"0x047", L"0x048", L"Foul Breath", L"Stagnant Air", L"Life Drain", 
+				L"Spirit Drain", L"0x04D", L"0x04E", L"0x04F", L"Maragidyne", L"Magarudyne", L"Mabufudyne", L"Maziodyne", L"Megidolaon", L"Mahamaon", 
+				L"Mamudoon", L"Sexy Dance", L"Eerie Sound", L"Tentarafoo", L"Evil Smile", L"Poison Mist", L"Holy Arrow", L"Life Drain", L"Spirit Drain", 
+				L"0x05F", L"Death", L"Yell", L"Yell", L"Death", L"Death", L"Death", L"Moonless Gown", L"Moonless Gown", L"Summon", L"Slash Attack", 
+				L"Pierce Attack", L"Strike Attack", L"Yell", L"Pierce Attack", L"Fire Attack", L"Almighty Attack", L"Bash", L"Assault Dive", 
+				L"Kill Rush", L"Swift Strike", L"Sonic Punch", L"Heat Wave", L"Gigantic Fist", L"Akasha Arts", L"God\'s Hand", L"Cleave", L"Fatal End", 
+				L"Getsu-ei", L"Zan-ei", L"Mighty Swing", L"Double Fangs", L"Blade of Fury", L"Deathbound", L"Tempest Slash", L"Heaven\'s Blade", 
+				L"Pralaya", L"Power Slash", L"Gale Slash", L"Brave Blade", L"Herculean Strike", L"Vicious Strike", L"Single Shot", L"Twin Shot", 
+				L"Holy Arrow", L"Torrent Shot", L"Arrow Rain", L"Myriad Arrows", L"Primal Force", L"Vorpal Blade", L"Weary Thrust", L"Cruel Attack", 
+				L"Vile Assault", L"Poison Arrow", L"Weary Thrust", L"Vorpal Blade", L"0x097", L"0x098", L"0x099", L"0x09A", L"0x09B", L"0x09C", 
+				L"0x09D", L"0x09E", L"0x09F", L"+charm(low)", L"+charm(med)", L"+charm(high)", L"+distress(low)", L"+distress(med)", L"+distress(high)", 
+				L"+panic(low)", L"+panic(med)", L"+panic(high)", L"+fear(low)", L"+fear(med)", L"+fear(high)", L"+rage(low)", L"+rage(med)", 
+				L"+rage(high)", L"+poison(low)", L"0x0B0", L"0x0B1", L"0x0B2", L"0x0B3", L"0x0B4", L"0x0B5", L"0x0B6", L"0x0B7", L"0x0B8", L"0x0B9", 
+				L"0x0BA", L"0x0BB", L"0x0BC", L"0x0BD", L"0x0BE", L"0x0BF", L"Dia", L"Diarama", L"Diarahan", L"Media", L"Mediarama", L"Mediarahan", 
+				L"Salvation", L"Patra", L"Me Patra", L"Re Patra", L"Posumudi", L"Amrita", L"Recarm", L"Samarecarm", L"Tarunda", L"Matarunda", 
+				L"Sukunda", L"Masukunda", L"Rakunda", L"Marakunda", L"Dekunda", L"0x0D5", L"Tarukaja", L"Matarukaja", L"Sukukaja", L"Masukukaja", 
+				L"Rakukaja", L"Marakukaja", L"Power Charge", L"Mind Charge", L"0x0DE", L"Dekaja", L"Tetrakarn", L"Makarakarn", L"Rebellion", 
+				L"Revolution", L"0x0E4", L"Fire Break", L"Ice Break", L"Wind Break", L"Elec Break", L"Traesto", L"Trafuri", L"Healing Wave", 
+				L"Recarmdra", L"Charmdi", L"Enradi", L"0x0EF", L"0x0F0", L"0x0F1", L"0x0F2", L"0x0F3", L"0x0F4", L"0x0F5", L"0x0F6", L"0x0F7", 
+				L"0x0F8", L"0x0F9", L"0x0FA", L"0x0FB", L"0x0FC", L"0x0FD", L"0x0FE", L"0x0FF", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Jack Brothers", L"Ardhanari", L"Trickster", 
+				L"Infinity", L"Valhalla", L"Summer Dream", L"Armageddon", L"Cadenza", L"Scarlet Havoc", L"Frolic", L"Dreamfest", L"King and I", 
+				L"Best Friends", L"Shadow Hound", L"Thunder Call", L"Last Judge", L"Raktapaksha", L"Justice", L"Trickster", L"0x123", L"0x124", 
+				L"Primal Darkness", L"Dark Embrace", L"Primal Darkness", L"Primal Darkness", L"0x129", L"0x12A", L"0x12B", L"0x12C", L"0x12D", 
+				L"0x12E", L"0x12F", L"Pierce Attack", L"Fire Attack", L"Summon", L"Summon", L"Armed&Ready", L"Sacrifice", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Night Queen", 
+				L"All-Out 2", L"All-Out 3", L"All-Out 4", L"Plume of Dusk", L"Analyze", L"Oracle", L"Full Analysis", L"Oracle", L"Oracle", L"Oracle", 
+				L"Oracle", L"Oracle", L"All-Out 2L", L"All-Out 3L", L"All-Out 4L", L"Support Scan", L"Third Eye", L"Mind DJ", L"DJ Queen", L"Escape Route", 
+				L"Healing Wave", L"Summon", L"Orgia Mode", L"Great Seal", L"0x158", L"0x159", L"Ice Attack", L"Wind Attack", L"Elec Attack", 
+				L"Fire Attack", L"Pierce Attack", L"Strike Attack", L"Summon", L"Summon", L"Summon", L"Prophecy of Ruin", L"Heartbreaker", L"Unite", 
+				L"Separate", L"Pierce Attack", L"Pierce Attack", L"Samarecarm", L"Samarecarm", L"Charge", L"Giga Spark", L"Wheel of Fortune", 
+				L"Wheel of Fortune", L"Wheel of Fortune", L"Paradigm Shift", L"Wheel of Fortune", L"Wheel of Fortune", L"E Attack Up", L"P Attack Up", 
+				L"E Attack Down", L"P Attack Down", L"E Defense Up", L"P Defense Up", L"E Defense Down", L"P Defense Down", L"E Panic", L"P Panic", 
+				L"E Rage", L"P Rage", L"E Distress", L"P Distress", L"E Fear", L"P Fear", L"E Damage Low", L"P Damage Low", L"E Damage Mid", 
+				L"P Damage Mid", L"E Damage High", L"P Damage High", L"E Heal", L"P Heal", L"Almighty Attack", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Band Aid", L"Medicine", L"Bead", L"Snuff Soul", L"Chewing Soul", L"Precious Egg", L"Soma", 
+				L"0x197", L"0x198", L"0x199", L"0x19A", L"Muscle Drink", L"Odd Morsel", L"Rancid Gravy", L"Powerful Drug", L"Cold Medicine", 
+				L"Energy Drink", L"0x1A1", L"0x1A2", L"0x1A3", L"0x1A4", L"0x1A5", L"0x1A6", L"0x1A7", L"0x1A8", L"0x1A9", L"0x1AA", L"0x1AB", 
+				L"0x1AC", L"0x1AD", L"0x1AE", L"0x1AF", L"0x1B0", L"0x1B1", L"0x1B2", L"0x1B3", L"0x1B4", L"0x1B5", L"Homunculus", L"Plume of Dusk", 
+				L"0x1B8", L"0x1B9", L"0x1BA", L"0x1BB", L"0x1BC", L"0x1BD", L"0x1BE", L"0x1BF", L"0x1C0", L"0x1C1", L"0x1C2", L"0x1C3", L"0x1C4", 
+				L"0x1C5", L"0x1C6", L"0x1C7", L"0x1C8", L"0x1C9", L"0x1CA", L"0x1CB", L"0x1CC", L"0x1CD", L"0x1CE", L"0x1CF", L"Resist Slash", 
+				L"Null Slash", L"Repel Slash", L"Absorb Slash", L"Resist Strike", L"Null Strike", L"Repel Strike", L"Absorb Strike", L"Resist Pierce", 
+				L"Null Pierce", L"Repel Pierce", L"Absorb Pierce", L"Resist Fire", L"Null Fire", L"Repel Fire", L"Absorb Fire", L"Resist Ice", 
+				L"Null Ice", L"Repel Ice", L"Absorb Ice", L"Resist Elec", L"Null Elec", L"Repel Elec", L"Absorb Elec", L"Resist Wind", L"Null Wind", 
+				L"Repel Wind", L"Absorb Wind", L"Resist Light", L"Null Light", L"Repel Light", L"Resist Dark", L"Null Dark", L"Repel Dark", L"Null Charm", 
+				L"Null Distress", L"Null Panic", L"Null Fear", L"Null Rage", L"Null Freeze", L"Null Shock", L"Null Poison", L"Unshaken Will", 
+				L"Masakados", L"Dodge Slash", L"Evade Slash", L"Dodge Strike", L"Evade Strike", L"Dodge Pierce", L"Evade Pierce", L"Dodge Fire", 
+				L"Evade Fire", L"Dodge Ice", L"Evade Ice", L"Dodge Wind", L"Evade Wind", L"Dodge Elec", L"Evade Elec", L"Stamina Up 1", L"Stamina Up 2", 
+				L"Stamina Up 3", L"0x20D", L"Premonition", L"Angelic Grace", L"Fire Boost", L"Fire Amp", L"Ice Boost", L"Ice Amp", L"Elec Boost", 
+				L"Elec Amp", L"Wind Boost", L"Wind Amp", L"Fast Retreat", L"HP Up 1", L"HP Up 2", L"HP Up 3", L"SP Up 1", L"SP Up 2", L"SP Up 3", 
+				L"Raging Tiger", L"Counter", L"Counterstrike", L"High Counter", L"Regenerate 1", L"Regenerate 2", L"Regenerate 3", L"Invigorate 1", 
+				L"Invigorate 2", L"Invigorate 3", L"Growth 1", L"Growth 2", L"Growth 3", L"0x22C", L"Auto-Tarukaja", L"Auto-Rakukaja", L"Auto-Sukukaja", 
+				L"Alertness", L"Sharp Student", L"Apt Pupil", L"Ali Dance", L"Firm Stance", L"Spell Master", L"Arms Master", L"HP Up", L"SP Up", 
+				L"0x239", L"Divine Grace", L"Endure", L"Enduring Soul", L"Heavy Master", L"Magic Skill Up", L"Phys Skill Up", L"0x240", L"0x240", 
+				L"0x240", L"0x243", L"Rosary", L"Prayer Beads", L"Spear Master", L"Bow Master", L"1hSwd Master", L"2hSwd Master", L"Fist Master", 
+				L"Survive Light", L"Survive Dark", L"Auto-Maraku", L"Auto-Mataru", L"Auto-Masuku", L"Charm Boost", L"Poison Boost", L"Distress Boost", 
+				L"Panic Boost", L"Fear Boost", L"Rage Boost", L"Ailment Boost", L"Hama Boost", L"Mudo Boost", L"Endure Light", L"Endure Dark", 
+				L"0x25B", L"0x25C", L"Cool Breeze", L"Victory Cry", L"Spring of Life", L"Spring of Life", L"For Debug", L"Fast-Heal", L"Insta-Heal", 
+				L"Resist Charm", L"Resist Distress", L"Resist Panic", L"Resist Fear", L"Resist Rage", L"Resist Freeze", L"Resist Shock", L"Resist Poison", 
+				L"HP Up High", L"SP Up High", L"0x26E", L"0x26F"});
+			this->persona1_magic4->Location = System::Drawing::Point(9, 303);
+			this->persona1_magic4->Name = L"persona1_magic4";
+			this->persona1_magic4->Size = System::Drawing::Size(121, 21);
+			this->persona1_magic4->TabIndex = 35;
+			this->persona1_magic4->SelectedIndexChanged += gcnew System::EventHandler(this, &Form1::persona1_magic4_SelectedIndexChanged);
+			// 
+			// persona1_magic3
+			// 
+			this->persona1_magic3->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->persona1_magic3->FormattingEnabled = true;
+			this->persona1_magic3->Items->AddRange(gcnew cli::array< System::Object^  >(624) {L"Slash Attack", L"Agi", L"Agilao", L"Agidyne", 
+				L"Maragi", L"Maragion", L"Maragidyne", L"Maralagidyne", L"0x008", L"Ragnarok", L"Garu", L"Garula", L"Garudyne", L"Magaru", L"Magarula", 
+				L"Magarudyne", L"0x010", L"0x011", L"Panta Rhei", L"Bufu", L"Bufula", L"Bufudyne", L"Mabufu", L"Mabufula", L"Mabufudyne", L"0x019", 
+				L"0x01A", L"Niflheim", L"Zio", L"Zionga", L"Ziodyne", L"Mazio", L"Mazionga", L"Maziodyne", L"0x022", L"0x023", L"Thunder Reign", 
+				L"Megido", L"Megidola", L"Megidolaon", L"Last Resort", L"0x029", L"0x02A", L"Black Viper", L"Morning Star", L"Hama", L"Mahama", 
+				L"Hamaon", L"Mahamaon", L"0x031", L"Samsara", L"Mudo", L"Mamudo", L"Mudoon", L"Mamudoon", L"0x037", L"Die for Me!", L"Marin Karin", 
+				L"Sexy Dance", L"Bewilder", L"Eerie Sound", L"Pulinpa", L"Tentarafoo", L"Evil Touch", L"Evil Smile", L"Ghastly Wail", L"Provoke", 
+				L"Infuriate", L"Poisma", L"Poison Mist", L"Virus Breath", L"0x047", L"0x048", L"Foul Breath", L"Stagnant Air", L"Life Drain", 
+				L"Spirit Drain", L"0x04D", L"0x04E", L"0x04F", L"Maragidyne", L"Magarudyne", L"Mabufudyne", L"Maziodyne", L"Megidolaon", L"Mahamaon", 
+				L"Mamudoon", L"Sexy Dance", L"Eerie Sound", L"Tentarafoo", L"Evil Smile", L"Poison Mist", L"Holy Arrow", L"Life Drain", L"Spirit Drain", 
+				L"0x05F", L"Death", L"Yell", L"Yell", L"Death", L"Death", L"Death", L"Moonless Gown", L"Moonless Gown", L"Summon", L"Slash Attack", 
+				L"Pierce Attack", L"Strike Attack", L"Yell", L"Pierce Attack", L"Fire Attack", L"Almighty Attack", L"Bash", L"Assault Dive", 
+				L"Kill Rush", L"Swift Strike", L"Sonic Punch", L"Heat Wave", L"Gigantic Fist", L"Akasha Arts", L"God\'s Hand", L"Cleave", L"Fatal End", 
+				L"Getsu-ei", L"Zan-ei", L"Mighty Swing", L"Double Fangs", L"Blade of Fury", L"Deathbound", L"Tempest Slash", L"Heaven\'s Blade", 
+				L"Pralaya", L"Power Slash", L"Gale Slash", L"Brave Blade", L"Herculean Strike", L"Vicious Strike", L"Single Shot", L"Twin Shot", 
+				L"Holy Arrow", L"Torrent Shot", L"Arrow Rain", L"Myriad Arrows", L"Primal Force", L"Vorpal Blade", L"Weary Thrust", L"Cruel Attack", 
+				L"Vile Assault", L"Poison Arrow", L"Weary Thrust", L"Vorpal Blade", L"0x097", L"0x098", L"0x099", L"0x09A", L"0x09B", L"0x09C", 
+				L"0x09D", L"0x09E", L"0x09F", L"+charm(low)", L"+charm(med)", L"+charm(high)", L"+distress(low)", L"+distress(med)", L"+distress(high)", 
+				L"+panic(low)", L"+panic(med)", L"+panic(high)", L"+fear(low)", L"+fear(med)", L"+fear(high)", L"+rage(low)", L"+rage(med)", 
+				L"+rage(high)", L"+poison(low)", L"0x0B0", L"0x0B1", L"0x0B2", L"0x0B3", L"0x0B4", L"0x0B5", L"0x0B6", L"0x0B7", L"0x0B8", L"0x0B9", 
+				L"0x0BA", L"0x0BB", L"0x0BC", L"0x0BD", L"0x0BE", L"0x0BF", L"Dia", L"Diarama", L"Diarahan", L"Media", L"Mediarama", L"Mediarahan", 
+				L"Salvation", L"Patra", L"Me Patra", L"Re Patra", L"Posumudi", L"Amrita", L"Recarm", L"Samarecarm", L"Tarunda", L"Matarunda", 
+				L"Sukunda", L"Masukunda", L"Rakunda", L"Marakunda", L"Dekunda", L"0x0D5", L"Tarukaja", L"Matarukaja", L"Sukukaja", L"Masukukaja", 
+				L"Rakukaja", L"Marakukaja", L"Power Charge", L"Mind Charge", L"0x0DE", L"Dekaja", L"Tetrakarn", L"Makarakarn", L"Rebellion", 
+				L"Revolution", L"0x0E4", L"Fire Break", L"Ice Break", L"Wind Break", L"Elec Break", L"Traesto", L"Trafuri", L"Healing Wave", 
+				L"Recarmdra", L"Charmdi", L"Enradi", L"0x0EF", L"0x0F0", L"0x0F1", L"0x0F2", L"0x0F3", L"0x0F4", L"0x0F5", L"0x0F6", L"0x0F7", 
+				L"0x0F8", L"0x0F9", L"0x0FA", L"0x0FB", L"0x0FC", L"0x0FD", L"0x0FE", L"0x0FF", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Jack Brothers", L"Ardhanari", L"Trickster", 
+				L"Infinity", L"Valhalla", L"Summer Dream", L"Armageddon", L"Cadenza", L"Scarlet Havoc", L"Frolic", L"Dreamfest", L"King and I", 
+				L"Best Friends", L"Shadow Hound", L"Thunder Call", L"Last Judge", L"Raktapaksha", L"Justice", L"Trickster", L"0x123", L"0x124", 
+				L"Primal Darkness", L"Dark Embrace", L"Primal Darkness", L"Primal Darkness", L"0x129", L"0x12A", L"0x12B", L"0x12C", L"0x12D", 
+				L"0x12E", L"0x12F", L"Pierce Attack", L"Fire Attack", L"Summon", L"Summon", L"Armed&Ready", L"Sacrifice", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Night Queen", 
+				L"All-Out 2", L"All-Out 3", L"All-Out 4", L"Plume of Dusk", L"Analyze", L"Oracle", L"Full Analysis", L"Oracle", L"Oracle", L"Oracle", 
+				L"Oracle", L"Oracle", L"All-Out 2L", L"All-Out 3L", L"All-Out 4L", L"Support Scan", L"Third Eye", L"Mind DJ", L"DJ Queen", L"Escape Route", 
+				L"Healing Wave", L"Summon", L"Orgia Mode", L"Great Seal", L"0x158", L"0x159", L"Ice Attack", L"Wind Attack", L"Elec Attack", 
+				L"Fire Attack", L"Pierce Attack", L"Strike Attack", L"Summon", L"Summon", L"Summon", L"Prophecy of Ruin", L"Heartbreaker", L"Unite", 
+				L"Separate", L"Pierce Attack", L"Pierce Attack", L"Samarecarm", L"Samarecarm", L"Charge", L"Giga Spark", L"Wheel of Fortune", 
+				L"Wheel of Fortune", L"Wheel of Fortune", L"Paradigm Shift", L"Wheel of Fortune", L"Wheel of Fortune", L"E Attack Up", L"P Attack Up", 
+				L"E Attack Down", L"P Attack Down", L"E Defense Up", L"P Defense Up", L"E Defense Down", L"P Defense Down", L"E Panic", L"P Panic", 
+				L"E Rage", L"P Rage", L"E Distress", L"P Distress", L"E Fear", L"P Fear", L"E Damage Low", L"P Damage Low", L"E Damage Mid", 
+				L"P Damage Mid", L"E Damage High", L"P Damage High", L"E Heal", L"P Heal", L"Almighty Attack", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Band Aid", L"Medicine", L"Bead", L"Snuff Soul", L"Chewing Soul", L"Precious Egg", L"Soma", 
+				L"0x197", L"0x198", L"0x199", L"0x19A", L"Muscle Drink", L"Odd Morsel", L"Rancid Gravy", L"Powerful Drug", L"Cold Medicine", 
+				L"Energy Drink", L"0x1A1", L"0x1A2", L"0x1A3", L"0x1A4", L"0x1A5", L"0x1A6", L"0x1A7", L"0x1A8", L"0x1A9", L"0x1AA", L"0x1AB", 
+				L"0x1AC", L"0x1AD", L"0x1AE", L"0x1AF", L"0x1B0", L"0x1B1", L"0x1B2", L"0x1B3", L"0x1B4", L"0x1B5", L"Homunculus", L"Plume of Dusk", 
+				L"0x1B8", L"0x1B9", L"0x1BA", L"0x1BB", L"0x1BC", L"0x1BD", L"0x1BE", L"0x1BF", L"0x1C0", L"0x1C1", L"0x1C2", L"0x1C3", L"0x1C4", 
+				L"0x1C5", L"0x1C6", L"0x1C7", L"0x1C8", L"0x1C9", L"0x1CA", L"0x1CB", L"0x1CC", L"0x1CD", L"0x1CE", L"0x1CF", L"Resist Slash", 
+				L"Null Slash", L"Repel Slash", L"Absorb Slash", L"Resist Strike", L"Null Strike", L"Repel Strike", L"Absorb Strike", L"Resist Pierce", 
+				L"Null Pierce", L"Repel Pierce", L"Absorb Pierce", L"Resist Fire", L"Null Fire", L"Repel Fire", L"Absorb Fire", L"Resist Ice", 
+				L"Null Ice", L"Repel Ice", L"Absorb Ice", L"Resist Elec", L"Null Elec", L"Repel Elec", L"Absorb Elec", L"Resist Wind", L"Null Wind", 
+				L"Repel Wind", L"Absorb Wind", L"Resist Light", L"Null Light", L"Repel Light", L"Resist Dark", L"Null Dark", L"Repel Dark", L"Null Charm", 
+				L"Null Distress", L"Null Panic", L"Null Fear", L"Null Rage", L"Null Freeze", L"Null Shock", L"Null Poison", L"Unshaken Will", 
+				L"Masakados", L"Dodge Slash", L"Evade Slash", L"Dodge Strike", L"Evade Strike", L"Dodge Pierce", L"Evade Pierce", L"Dodge Fire", 
+				L"Evade Fire", L"Dodge Ice", L"Evade Ice", L"Dodge Wind", L"Evade Wind", L"Dodge Elec", L"Evade Elec", L"Stamina Up 1", L"Stamina Up 2", 
+				L"Stamina Up 3", L"0x20D", L"Premonition", L"Angelic Grace", L"Fire Boost", L"Fire Amp", L"Ice Boost", L"Ice Amp", L"Elec Boost", 
+				L"Elec Amp", L"Wind Boost", L"Wind Amp", L"Fast Retreat", L"HP Up 1", L"HP Up 2", L"HP Up 3", L"SP Up 1", L"SP Up 2", L"SP Up 3", 
+				L"Raging Tiger", L"Counter", L"Counterstrike", L"High Counter", L"Regenerate 1", L"Regenerate 2", L"Regenerate 3", L"Invigorate 1", 
+				L"Invigorate 2", L"Invigorate 3", L"Growth 1", L"Growth 2", L"Growth 3", L"0x22C", L"Auto-Tarukaja", L"Auto-Rakukaja", L"Auto-Sukukaja", 
+				L"Alertness", L"Sharp Student", L"Apt Pupil", L"Ali Dance", L"Firm Stance", L"Spell Master", L"Arms Master", L"HP Up", L"SP Up", 
+				L"0x239", L"Divine Grace", L"Endure", L"Enduring Soul", L"Heavy Master", L"Magic Skill Up", L"Phys Skill Up", L"0x240", L"0x240", 
+				L"0x240", L"0x243", L"Rosary", L"Prayer Beads", L"Spear Master", L"Bow Master", L"1hSwd Master", L"2hSwd Master", L"Fist Master", 
+				L"Survive Light", L"Survive Dark", L"Auto-Maraku", L"Auto-Mataru", L"Auto-Masuku", L"Charm Boost", L"Poison Boost", L"Distress Boost", 
+				L"Panic Boost", L"Fear Boost", L"Rage Boost", L"Ailment Boost", L"Hama Boost", L"Mudo Boost", L"Endure Light", L"Endure Dark", 
+				L"0x25B", L"0x25C", L"Cool Breeze", L"Victory Cry", L"Spring of Life", L"Spring of Life", L"For Debug", L"Fast-Heal", L"Insta-Heal", 
+				L"Resist Charm", L"Resist Distress", L"Resist Panic", L"Resist Fear", L"Resist Rage", L"Resist Freeze", L"Resist Shock", L"Resist Poison", 
+				L"HP Up High", L"SP Up High", L"0x26E", L"0x26F"});
+			this->persona1_magic3->Location = System::Drawing::Point(9, 276);
+			this->persona1_magic3->Name = L"persona1_magic3";
+			this->persona1_magic3->Size = System::Drawing::Size(121, 21);
+			this->persona1_magic3->TabIndex = 34;
+			this->persona1_magic3->SelectedIndexChanged += gcnew System::EventHandler(this, &Form1::persona1_magic3_SelectedIndexChanged);
+			// 
+			// persona1_magic2
+			// 
+			this->persona1_magic2->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->persona1_magic2->FormattingEnabled = true;
+			this->persona1_magic2->Items->AddRange(gcnew cli::array< System::Object^  >(624) {L"Slash Attack", L"Agi", L"Agilao", L"Agidyne", 
+				L"Maragi", L"Maragion", L"Maragidyne", L"Maralagidyne", L"0x008", L"Ragnarok", L"Garu", L"Garula", L"Garudyne", L"Magaru", L"Magarula", 
+				L"Magarudyne", L"0x010", L"0x011", L"Panta Rhei", L"Bufu", L"Bufula", L"Bufudyne", L"Mabufu", L"Mabufula", L"Mabufudyne", L"0x019", 
+				L"0x01A", L"Niflheim", L"Zio", L"Zionga", L"Ziodyne", L"Mazio", L"Mazionga", L"Maziodyne", L"0x022", L"0x023", L"Thunder Reign", 
+				L"Megido", L"Megidola", L"Megidolaon", L"Last Resort", L"0x029", L"0x02A", L"Black Viper", L"Morning Star", L"Hama", L"Mahama", 
+				L"Hamaon", L"Mahamaon", L"0x031", L"Samsara", L"Mudo", L"Mamudo", L"Mudoon", L"Mamudoon", L"0x037", L"Die for Me!", L"Marin Karin", 
+				L"Sexy Dance", L"Bewilder", L"Eerie Sound", L"Pulinpa", L"Tentarafoo", L"Evil Touch", L"Evil Smile", L"Ghastly Wail", L"Provoke", 
+				L"Infuriate", L"Poisma", L"Poison Mist", L"Virus Breath", L"0x047", L"0x048", L"Foul Breath", L"Stagnant Air", L"Life Drain", 
+				L"Spirit Drain", L"0x04D", L"0x04E", L"0x04F", L"Maragidyne", L"Magarudyne", L"Mabufudyne", L"Maziodyne", L"Megidolaon", L"Mahamaon", 
+				L"Mamudoon", L"Sexy Dance", L"Eerie Sound", L"Tentarafoo", L"Evil Smile", L"Poison Mist", L"Holy Arrow", L"Life Drain", L"Spirit Drain", 
+				L"0x05F", L"Death", L"Yell", L"Yell", L"Death", L"Death", L"Death", L"Moonless Gown", L"Moonless Gown", L"Summon", L"Slash Attack", 
+				L"Pierce Attack", L"Strike Attack", L"Yell", L"Pierce Attack", L"Fire Attack", L"Almighty Attack", L"Bash", L"Assault Dive", 
+				L"Kill Rush", L"Swift Strike", L"Sonic Punch", L"Heat Wave", L"Gigantic Fist", L"Akasha Arts", L"God\'s Hand", L"Cleave", L"Fatal End", 
+				L"Getsu-ei", L"Zan-ei", L"Mighty Swing", L"Double Fangs", L"Blade of Fury", L"Deathbound", L"Tempest Slash", L"Heaven\'s Blade", 
+				L"Pralaya", L"Power Slash", L"Gale Slash", L"Brave Blade", L"Herculean Strike", L"Vicious Strike", L"Single Shot", L"Twin Shot", 
+				L"Holy Arrow", L"Torrent Shot", L"Arrow Rain", L"Myriad Arrows", L"Primal Force", L"Vorpal Blade", L"Weary Thrust", L"Cruel Attack", 
+				L"Vile Assault", L"Poison Arrow", L"Weary Thrust", L"Vorpal Blade", L"0x097", L"0x098", L"0x099", L"0x09A", L"0x09B", L"0x09C", 
+				L"0x09D", L"0x09E", L"0x09F", L"+charm(low)", L"+charm(med)", L"+charm(high)", L"+distress(low)", L"+distress(med)", L"+distress(high)", 
+				L"+panic(low)", L"+panic(med)", L"+panic(high)", L"+fear(low)", L"+fear(med)", L"+fear(high)", L"+rage(low)", L"+rage(med)", 
+				L"+rage(high)", L"+poison(low)", L"0x0B0", L"0x0B1", L"0x0B2", L"0x0B3", L"0x0B4", L"0x0B5", L"0x0B6", L"0x0B7", L"0x0B8", L"0x0B9", 
+				L"0x0BA", L"0x0BB", L"0x0BC", L"0x0BD", L"0x0BE", L"0x0BF", L"Dia", L"Diarama", L"Diarahan", L"Media", L"Mediarama", L"Mediarahan", 
+				L"Salvation", L"Patra", L"Me Patra", L"Re Patra", L"Posumudi", L"Amrita", L"Recarm", L"Samarecarm", L"Tarunda", L"Matarunda", 
+				L"Sukunda", L"Masukunda", L"Rakunda", L"Marakunda", L"Dekunda", L"0x0D5", L"Tarukaja", L"Matarukaja", L"Sukukaja", L"Masukukaja", 
+				L"Rakukaja", L"Marakukaja", L"Power Charge", L"Mind Charge", L"0x0DE", L"Dekaja", L"Tetrakarn", L"Makarakarn", L"Rebellion", 
+				L"Revolution", L"0x0E4", L"Fire Break", L"Ice Break", L"Wind Break", L"Elec Break", L"Traesto", L"Trafuri", L"Healing Wave", 
+				L"Recarmdra", L"Charmdi", L"Enradi", L"0x0EF", L"0x0F0", L"0x0F1", L"0x0F2", L"0x0F3", L"0x0F4", L"0x0F5", L"0x0F6", L"0x0F7", 
+				L"0x0F8", L"0x0F9", L"0x0FA", L"0x0FB", L"0x0FC", L"0x0FD", L"0x0FE", L"0x0FF", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Jack Brothers", L"Ardhanari", L"Trickster", 
+				L"Infinity", L"Valhalla", L"Summer Dream", L"Armageddon", L"Cadenza", L"Scarlet Havoc", L"Frolic", L"Dreamfest", L"King and I", 
+				L"Best Friends", L"Shadow Hound", L"Thunder Call", L"Last Judge", L"Raktapaksha", L"Justice", L"Trickster", L"0x123", L"0x124", 
+				L"Primal Darkness", L"Dark Embrace", L"Primal Darkness", L"Primal Darkness", L"0x129", L"0x12A", L"0x12B", L"0x12C", L"0x12D", 
+				L"0x12E", L"0x12F", L"Pierce Attack", L"Fire Attack", L"Summon", L"Summon", L"Armed&Ready", L"Sacrifice", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Night Queen", 
+				L"All-Out 2", L"All-Out 3", L"All-Out 4", L"Plume of Dusk", L"Analyze", L"Oracle", L"Full Analysis", L"Oracle", L"Oracle", L"Oracle", 
+				L"Oracle", L"Oracle", L"All-Out 2L", L"All-Out 3L", L"All-Out 4L", L"Support Scan", L"Third Eye", L"Mind DJ", L"DJ Queen", L"Escape Route", 
+				L"Healing Wave", L"Summon", L"Orgia Mode", L"Great Seal", L"0x158", L"0x159", L"Ice Attack", L"Wind Attack", L"Elec Attack", 
+				L"Fire Attack", L"Pierce Attack", L"Strike Attack", L"Summon", L"Summon", L"Summon", L"Prophecy of Ruin", L"Heartbreaker", L"Unite", 
+				L"Separate", L"Pierce Attack", L"Pierce Attack", L"Samarecarm", L"Samarecarm", L"Charge", L"Giga Spark", L"Wheel of Fortune", 
+				L"Wheel of Fortune", L"Wheel of Fortune", L"Paradigm Shift", L"Wheel of Fortune", L"Wheel of Fortune", L"E Attack Up", L"P Attack Up", 
+				L"E Attack Down", L"P Attack Down", L"E Defense Up", L"P Defense Up", L"E Defense Down", L"P Defense Down", L"E Panic", L"P Panic", 
+				L"E Rage", L"P Rage", L"E Distress", L"P Distress", L"E Fear", L"P Fear", L"E Damage Low", L"P Damage Low", L"E Damage Mid", 
+				L"P Damage Mid", L"E Damage High", L"P Damage High", L"E Heal", L"P Heal", L"Almighty Attack", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Band Aid", L"Medicine", L"Bead", L"Snuff Soul", L"Chewing Soul", L"Precious Egg", L"Soma", 
+				L"0x197", L"0x198", L"0x199", L"0x19A", L"Muscle Drink", L"Odd Morsel", L"Rancid Gravy", L"Powerful Drug", L"Cold Medicine", 
+				L"Energy Drink", L"0x1A1", L"0x1A2", L"0x1A3", L"0x1A4", L"0x1A5", L"0x1A6", L"0x1A7", L"0x1A8", L"0x1A9", L"0x1AA", L"0x1AB", 
+				L"0x1AC", L"0x1AD", L"0x1AE", L"0x1AF", L"0x1B0", L"0x1B1", L"0x1B2", L"0x1B3", L"0x1B4", L"0x1B5", L"Homunculus", L"Plume of Dusk", 
+				L"0x1B8", L"0x1B9", L"0x1BA", L"0x1BB", L"0x1BC", L"0x1BD", L"0x1BE", L"0x1BF", L"0x1C0", L"0x1C1", L"0x1C2", L"0x1C3", L"0x1C4", 
+				L"0x1C5", L"0x1C6", L"0x1C7", L"0x1C8", L"0x1C9", L"0x1CA", L"0x1CB", L"0x1CC", L"0x1CD", L"0x1CE", L"0x1CF", L"Resist Slash", 
+				L"Null Slash", L"Repel Slash", L"Absorb Slash", L"Resist Strike", L"Null Strike", L"Repel Strike", L"Absorb Strike", L"Resist Pierce", 
+				L"Null Pierce", L"Repel Pierce", L"Absorb Pierce", L"Resist Fire", L"Null Fire", L"Repel Fire", L"Absorb Fire", L"Resist Ice", 
+				L"Null Ice", L"Repel Ice", L"Absorb Ice", L"Resist Elec", L"Null Elec", L"Repel Elec", L"Absorb Elec", L"Resist Wind", L"Null Wind", 
+				L"Repel Wind", L"Absorb Wind", L"Resist Light", L"Null Light", L"Repel Light", L"Resist Dark", L"Null Dark", L"Repel Dark", L"Null Charm", 
+				L"Null Distress", L"Null Panic", L"Null Fear", L"Null Rage", L"Null Freeze", L"Null Shock", L"Null Poison", L"Unshaken Will", 
+				L"Masakados", L"Dodge Slash", L"Evade Slash", L"Dodge Strike", L"Evade Strike", L"Dodge Pierce", L"Evade Pierce", L"Dodge Fire", 
+				L"Evade Fire", L"Dodge Ice", L"Evade Ice", L"Dodge Wind", L"Evade Wind", L"Dodge Elec", L"Evade Elec", L"Stamina Up 1", L"Stamina Up 2", 
+				L"Stamina Up 3", L"0x20D", L"Premonition", L"Angelic Grace", L"Fire Boost", L"Fire Amp", L"Ice Boost", L"Ice Amp", L"Elec Boost", 
+				L"Elec Amp", L"Wind Boost", L"Wind Amp", L"Fast Retreat", L"HP Up 1", L"HP Up 2", L"HP Up 3", L"SP Up 1", L"SP Up 2", L"SP Up 3", 
+				L"Raging Tiger", L"Counter", L"Counterstrike", L"High Counter", L"Regenerate 1", L"Regenerate 2", L"Regenerate 3", L"Invigorate 1", 
+				L"Invigorate 2", L"Invigorate 3", L"Growth 1", L"Growth 2", L"Growth 3", L"0x22C", L"Auto-Tarukaja", L"Auto-Rakukaja", L"Auto-Sukukaja", 
+				L"Alertness", L"Sharp Student", L"Apt Pupil", L"Ali Dance", L"Firm Stance", L"Spell Master", L"Arms Master", L"HP Up", L"SP Up", 
+				L"0x239", L"Divine Grace", L"Endure", L"Enduring Soul", L"Heavy Master", L"Magic Skill Up", L"Phys Skill Up", L"0x240", L"0x240", 
+				L"0x240", L"0x243", L"Rosary", L"Prayer Beads", L"Spear Master", L"Bow Master", L"1hSwd Master", L"2hSwd Master", L"Fist Master", 
+				L"Survive Light", L"Survive Dark", L"Auto-Maraku", L"Auto-Mataru", L"Auto-Masuku", L"Charm Boost", L"Poison Boost", L"Distress Boost", 
+				L"Panic Boost", L"Fear Boost", L"Rage Boost", L"Ailment Boost", L"Hama Boost", L"Mudo Boost", L"Endure Light", L"Endure Dark", 
+				L"0x25B", L"0x25C", L"Cool Breeze", L"Victory Cry", L"Spring of Life", L"Spring of Life", L"For Debug", L"Fast-Heal", L"Insta-Heal", 
+				L"Resist Charm", L"Resist Distress", L"Resist Panic", L"Resist Fear", L"Resist Rage", L"Resist Freeze", L"Resist Shock", L"Resist Poison", 
+				L"HP Up High", L"SP Up High", L"0x26E", L"0x26F"});
+			this->persona1_magic2->Location = System::Drawing::Point(9, 249);
+			this->persona1_magic2->Name = L"persona1_magic2";
+			this->persona1_magic2->Size = System::Drawing::Size(121, 21);
+			this->persona1_magic2->TabIndex = 33;
+			this->persona1_magic2->SelectedIndexChanged += gcnew System::EventHandler(this, &Form1::persona1_magic2_SelectedIndexChanged);
+			// 
+			// label17
+			// 
+			this->label17->AutoSize = true;
+			this->label17->Location = System::Drawing::Point(10, 206);
+			this->label17->Name = L"label17";
+			this->label17->Size = System::Drawing::Size(60, 13);
+			this->label17->TabIndex = 32;
+			this->label17->Text = L"Magic (1-8)";
+			// 
+			// persona1_magic1
+			// 
+			this->persona1_magic1->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->persona1_magic1->FormattingEnabled = true;
+			this->persona1_magic1->Items->AddRange(gcnew cli::array< System::Object^  >(624) {L"Slash Attack", L"Agi", L"Agilao", L"Agidyne", 
+				L"Maragi", L"Maragion", L"Maragidyne", L"Maralagidyne", L"0x008", L"Ragnarok", L"Garu", L"Garula", L"Garudyne", L"Magaru", L"Magarula", 
+				L"Magarudyne", L"0x010", L"0x011", L"Panta Rhei", L"Bufu", L"Bufula", L"Bufudyne", L"Mabufu", L"Mabufula", L"Mabufudyne", L"0x019", 
+				L"0x01A", L"Niflheim", L"Zio", L"Zionga", L"Ziodyne", L"Mazio", L"Mazionga", L"Maziodyne", L"0x022", L"0x023", L"Thunder Reign", 
+				L"Megido", L"Megidola", L"Megidolaon", L"Last Resort", L"0x029", L"0x02A", L"Black Viper", L"Morning Star", L"Hama", L"Mahama", 
+				L"Hamaon", L"Mahamaon", L"0x031", L"Samsara", L"Mudo", L"Mamudo", L"Mudoon", L"Mamudoon", L"0x037", L"Die for Me!", L"Marin Karin", 
+				L"Sexy Dance", L"Bewilder", L"Eerie Sound", L"Pulinpa", L"Tentarafoo", L"Evil Touch", L"Evil Smile", L"Ghastly Wail", L"Provoke", 
+				L"Infuriate", L"Poisma", L"Poison Mist", L"Virus Breath", L"0x047", L"0x048", L"Foul Breath", L"Stagnant Air", L"Life Drain", 
+				L"Spirit Drain", L"0x04D", L"0x04E", L"0x04F", L"Maragidyne", L"Magarudyne", L"Mabufudyne", L"Maziodyne", L"Megidolaon", L"Mahamaon", 
+				L"Mamudoon", L"Sexy Dance", L"Eerie Sound", L"Tentarafoo", L"Evil Smile", L"Poison Mist", L"Holy Arrow", L"Life Drain", L"Spirit Drain", 
+				L"0x05F", L"Death", L"Yell", L"Yell", L"Death", L"Death", L"Death", L"Moonless Gown", L"Moonless Gown", L"Summon", L"Slash Attack", 
+				L"Pierce Attack", L"Strike Attack", L"Yell", L"Pierce Attack", L"Fire Attack", L"Almighty Attack", L"Bash", L"Assault Dive", 
+				L"Kill Rush", L"Swift Strike", L"Sonic Punch", L"Heat Wave", L"Gigantic Fist", L"Akasha Arts", L"God\'s Hand", L"Cleave", L"Fatal End", 
+				L"Getsu-ei", L"Zan-ei", L"Mighty Swing", L"Double Fangs", L"Blade of Fury", L"Deathbound", L"Tempest Slash", L"Heaven\'s Blade", 
+				L"Pralaya", L"Power Slash", L"Gale Slash", L"Brave Blade", L"Herculean Strike", L"Vicious Strike", L"Single Shot", L"Twin Shot", 
+				L"Holy Arrow", L"Torrent Shot", L"Arrow Rain", L"Myriad Arrows", L"Primal Force", L"Vorpal Blade", L"Weary Thrust", L"Cruel Attack", 
+				L"Vile Assault", L"Poison Arrow", L"Weary Thrust", L"Vorpal Blade", L"0x097", L"0x098", L"0x099", L"0x09A", L"0x09B", L"0x09C", 
+				L"0x09D", L"0x09E", L"0x09F", L"+charm(low)", L"+charm(med)", L"+charm(high)", L"+distress(low)", L"+distress(med)", L"+distress(high)", 
+				L"+panic(low)", L"+panic(med)", L"+panic(high)", L"+fear(low)", L"+fear(med)", L"+fear(high)", L"+rage(low)", L"+rage(med)", 
+				L"+rage(high)", L"+poison(low)", L"0x0B0", L"0x0B1", L"0x0B2", L"0x0B3", L"0x0B4", L"0x0B5", L"0x0B6", L"0x0B7", L"0x0B8", L"0x0B9", 
+				L"0x0BA", L"0x0BB", L"0x0BC", L"0x0BD", L"0x0BE", L"0x0BF", L"Dia", L"Diarama", L"Diarahan", L"Media", L"Mediarama", L"Mediarahan", 
+				L"Salvation", L"Patra", L"Me Patra", L"Re Patra", L"Posumudi", L"Amrita", L"Recarm", L"Samarecarm", L"Tarunda", L"Matarunda", 
+				L"Sukunda", L"Masukunda", L"Rakunda", L"Marakunda", L"Dekunda", L"0x0D5", L"Tarukaja", L"Matarukaja", L"Sukukaja", L"Masukukaja", 
+				L"Rakukaja", L"Marakukaja", L"Power Charge", L"Mind Charge", L"0x0DE", L"Dekaja", L"Tetrakarn", L"Makarakarn", L"Rebellion", 
+				L"Revolution", L"0x0E4", L"Fire Break", L"Ice Break", L"Wind Break", L"Elec Break", L"Traesto", L"Trafuri", L"Healing Wave", 
+				L"Recarmdra", L"Charmdi", L"Enradi", L"0x0EF", L"0x0F0", L"0x0F1", L"0x0F2", L"0x0F3", L"0x0F4", L"0x0F5", L"0x0F6", L"0x0F7", 
+				L"0x0F8", L"0x0F9", L"0x0FA", L"0x0FB", L"0x0FC", L"0x0FD", L"0x0FE", L"0x0FF", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", 
+				L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Summer Dream", L"Jack Brothers", L"Ardhanari", L"Trickster", 
+				L"Infinity", L"Valhalla", L"Summer Dream", L"Armageddon", L"Cadenza", L"Scarlet Havoc", L"Frolic", L"Dreamfest", L"King and I", 
+				L"Best Friends", L"Shadow Hound", L"Thunder Call", L"Last Judge", L"Raktapaksha", L"Justice", L"Trickster", L"0x123", L"0x124", 
+				L"Primal Darkness", L"Dark Embrace", L"Primal Darkness", L"Primal Darkness", L"0x129", L"0x12A", L"0x12B", L"0x12C", L"0x12D", 
+				L"0x12E", L"0x12F", L"Pierce Attack", L"Fire Attack", L"Summon", L"Summon", L"Armed&Ready", L"Sacrifice", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Arcana Shift", L"Night Queen", 
+				L"All-Out 2", L"All-Out 3", L"All-Out 4", L"Plume of Dusk", L"Analyze", L"Oracle", L"Full Analysis", L"Oracle", L"Oracle", L"Oracle", 
+				L"Oracle", L"Oracle", L"All-Out 2L", L"All-Out 3L", L"All-Out 4L", L"Support Scan", L"Third Eye", L"Mind DJ", L"DJ Queen", L"Escape Route", 
+				L"Healing Wave", L"Summon", L"Orgia Mode", L"Great Seal", L"0x158", L"0x159", L"Ice Attack", L"Wind Attack", L"Elec Attack", 
+				L"Fire Attack", L"Pierce Attack", L"Strike Attack", L"Summon", L"Summon", L"Summon", L"Prophecy of Ruin", L"Heartbreaker", L"Unite", 
+				L"Separate", L"Pierce Attack", L"Pierce Attack", L"Samarecarm", L"Samarecarm", L"Charge", L"Giga Spark", L"Wheel of Fortune", 
+				L"Wheel of Fortune", L"Wheel of Fortune", L"Paradigm Shift", L"Wheel of Fortune", L"Wheel of Fortune", L"E Attack Up", L"P Attack Up", 
+				L"E Attack Down", L"P Attack Down", L"E Defense Up", L"P Defense Up", L"E Defense Down", L"P Defense Down", L"E Panic", L"P Panic", 
+				L"E Rage", L"P Rage", L"E Distress", L"P Distress", L"E Fear", L"P Fear", L"E Damage Low", L"P Damage Low", L"E Damage Mid", 
+				L"P Damage Mid", L"E Damage High", L"P Damage High", L"E Heal", L"P Heal", L"Almighty Attack", L"Arcana Shift", L"Arcana Shift", 
+				L"Arcana Shift", L"Arcana Shift", L"Band Aid", L"Medicine", L"Bead", L"Snuff Soul", L"Chewing Soul", L"Precious Egg", L"Soma", 
+				L"0x197", L"0x198", L"0x199", L"0x19A", L"Muscle Drink", L"Odd Morsel", L"Rancid Gravy", L"Powerful Drug", L"Cold Medicine", 
+				L"Energy Drink", L"0x1A1", L"0x1A2", L"0x1A3", L"0x1A4", L"0x1A5", L"0x1A6", L"0x1A7", L"0x1A8", L"0x1A9", L"0x1AA", L"0x1AB", 
+				L"0x1AC", L"0x1AD", L"0x1AE", L"0x1AF", L"0x1B0", L"0x1B1", L"0x1B2", L"0x1B3", L"0x1B4", L"0x1B5", L"Homunculus", L"Plume of Dusk", 
+				L"0x1B8", L"0x1B9", L"0x1BA", L"0x1BB", L"0x1BC", L"0x1BD", L"0x1BE", L"0x1BF", L"0x1C0", L"0x1C1", L"0x1C2", L"0x1C3", L"0x1C4", 
+				L"0x1C5", L"0x1C6", L"0x1C7", L"0x1C8", L"0x1C9", L"0x1CA", L"0x1CB", L"0x1CC", L"0x1CD", L"0x1CE", L"0x1CF", L"Resist Slash", 
+				L"Null Slash", L"Repel Slash", L"Absorb Slash", L"Resist Strike", L"Null Strike", L"Repel Strike", L"Absorb Strike", L"Resist Pierce", 
+				L"Null Pierce", L"Repel Pierce", L"Absorb Pierce", L"Resist Fire", L"Null Fire", L"Repel Fire", L"Absorb Fire", L"Resist Ice", 
+				L"Null Ice", L"Repel Ice", L"Absorb Ice", L"Resist Elec", L"Null Elec", L"Repel Elec", L"Absorb Elec", L"Resist Wind", L"Null Wind", 
+				L"Repel Wind", L"Absorb Wind", L"Resist Light", L"Null Light", L"Repel Light", L"Resist Dark", L"Null Dark", L"Repel Dark", L"Null Charm", 
+				L"Null Distress", L"Null Panic", L"Null Fear", L"Null Rage", L"Null Freeze", L"Null Shock", L"Null Poison", L"Unshaken Will", 
+				L"Masakados", L"Dodge Slash", L"Evade Slash", L"Dodge Strike", L"Evade Strike", L"Dodge Pierce", L"Evade Pierce", L"Dodge Fire", 
+				L"Evade Fire", L"Dodge Ice", L"Evade Ice", L"Dodge Wind", L"Evade Wind", L"Dodge Elec", L"Evade Elec", L"Stamina Up 1", L"Stamina Up 2", 
+				L"Stamina Up 3", L"0x20D", L"Premonition", L"Angelic Grace", L"Fire Boost", L"Fire Amp", L"Ice Boost", L"Ice Amp", L"Elec Boost", 
+				L"Elec Amp", L"Wind Boost", L"Wind Amp", L"Fast Retreat", L"HP Up 1", L"HP Up 2", L"HP Up 3", L"SP Up 1", L"SP Up 2", L"SP Up 3", 
+				L"Raging Tiger", L"Counter", L"Counterstrike", L"High Counter", L"Regenerate 1", L"Regenerate 2", L"Regenerate 3", L"Invigorate 1", 
+				L"Invigorate 2", L"Invigorate 3", L"Growth 1", L"Growth 2", L"Growth 3", L"0x22C", L"Auto-Tarukaja", L"Auto-Rakukaja", L"Auto-Sukukaja", 
+				L"Alertness", L"Sharp Student", L"Apt Pupil", L"Ali Dance", L"Firm Stance", L"Spell Master", L"Arms Master", L"HP Up", L"SP Up", 
+				L"0x239", L"Divine Grace", L"Endure", L"Enduring Soul", L"Heavy Master", L"Magic Skill Up", L"Phys Skill Up", L"0x240", L"0x240", 
+				L"0x240", L"0x243", L"Rosary", L"Prayer Beads", L"Spear Master", L"Bow Master", L"1hSwd Master", L"2hSwd Master", L"Fist Master", 
+				L"Survive Light", L"Survive Dark", L"Auto-Maraku", L"Auto-Mataru", L"Auto-Masuku", L"Charm Boost", L"Poison Boost", L"Distress Boost", 
+				L"Panic Boost", L"Fear Boost", L"Rage Boost", L"Ailment Boost", L"Hama Boost", L"Mudo Boost", L"Endure Light", L"Endure Dark", 
+				L"0x25B", L"0x25C", L"Cool Breeze", L"Victory Cry", L"Spring of Life", L"Spring of Life", L"For Debug", L"Fast-Heal", L"Insta-Heal", 
+				L"Resist Charm", L"Resist Distress", L"Resist Panic", L"Resist Fear", L"Resist Rage", L"Resist Freeze", L"Resist Shock", L"Resist Poison", 
+				L"HP Up High", L"SP Up High", L"0x26E", L"0x26F"});
+			this->persona1_magic1->Location = System::Drawing::Point(9, 222);
+			this->persona1_magic1->Name = L"persona1_magic1";
+			this->persona1_magic1->Size = System::Drawing::Size(121, 21);
+			this->persona1_magic1->TabIndex = 31;
+			this->persona1_magic1->SelectedIndexChanged += gcnew System::EventHandler(this, &Form1::persona1_magic1_SelectedIndexChanged);
 			// 
 			// persona1_lu
 			// 
@@ -530,7 +1195,7 @@ namespace persona3fespcsx2 {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(503, 470);
+			this->ClientSize = System::Drawing::Size(375, 470);
 			this->Controls->Add(this->groupBox2);
 			this->Controls->Add(this->groupBox1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"$this.Icon")));
@@ -579,6 +1244,14 @@ namespace persona3fespcsx2 {
 	private: System::Void persona1_en_ValueChanged(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void persona1_ag_ValueChanged(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void persona1_lu_ValueChanged(System::Object^  sender, System::EventArgs^  e);
+	private: System::Void persona1_magic1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e);
+	private: System::Void persona1_magic2_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e);
+	private: System::Void persona1_magic3_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e);
+	private: System::Void persona1_magic4_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e);
+	private: System::Void persona1_magic5_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e);
+	private: System::Void persona1_magic6_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e);
+	private: System::Void persona1_magic7_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e);
+	private: System::Void persona1_magic8_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e);
 };
 }
 
