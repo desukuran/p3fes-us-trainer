@@ -38,13 +38,37 @@ BOOL CALLBACK WorkerProc(HWND hwnd, LPARAM lParam) {
 
 System::Void Form1::Form1_Load(System::Object^  sender, System::EventArgs^  e)
 {				
-				EnumWindows(WorkerProc, NULL);
+	EnumWindows(WorkerProc, NULL);
 
-				if (hwind == NULL)
-					MessageBoxA(0, "PCSX2 Not Found", "PCSX2 wasn't found!", MB_RETRYCANCEL);
+	if (hwind == NULL)
+		MessageBoxA(0, "PCSX2 Not Found", "PCSX2 wasn't found!", MB_RETRYCANCEL);
 
-				GetWindowThreadProcessId(hwind,&pid);
-				HANDLE pHandle = OpenProcess(PROCESS_ALL_ACCESS,0,pid);
-				SetWindowText(hwind, L"Hello");
+	GetWindowThreadProcessId(hwind,&pid);
+	HANDLE pHandle = OpenProcess(PROCESS_ALL_ACCESS,0,pid);
+	LONG mcCurrentHP = 0x2083622C;
+	LONG persona_1_persona = 0x20836BAE;
+	int mod_hp = 998;
 
+	WriteProcessMemory(pHandle,(LPVOID)mcCurrentHP,&mod_hp,sizeof(short int),NULL);
+	
+	CloseHandle(pHandle);
+}
+
+System::Void Form1::comboBox1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = 10;
+	index = comboBox1->SelectedIndex;
+
+	//After ID 169, Theres a 21-sized dummy list, so we have to skip it.
+	if (index > 169)
+		index += 21;
+
+	int desiredPersona = index;
+	LONG persona_1_persona = 0x20836BAE;
+
+	HANDLE pHandle = OpenProcess(PROCESS_ALL_ACCESS,0,pid);
+
+	WriteProcessMemory(pHandle,(LPVOID)persona_1_persona,&desiredPersona,sizeof(short int),NULL);
+	
+	CloseHandle(pHandle);
 }
