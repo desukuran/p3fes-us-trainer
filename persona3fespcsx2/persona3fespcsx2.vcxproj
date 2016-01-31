@@ -70,7 +70,11 @@
       <AdditionalDependencies>kernel32.lib;user32.lib;advapi32.lib;</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>main</EntryPointSymbol>
+      <Version>1.0.0.0</Version>
     </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -80,7 +84,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.ico" />
+    <None Include="in.ico" />
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
