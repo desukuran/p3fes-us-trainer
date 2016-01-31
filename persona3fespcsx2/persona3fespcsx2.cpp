@@ -38,12 +38,14 @@ BOOL CALLBACK WorkerProc(HWND hwnd, LPARAM lParam) {
 }
 
 System::Void Form1::Form1_Load(System::Object^  sender, System::EventArgs^  e)
-{				
+{			
+	//Find PCSX2
 	EnumWindows(WorkerProc, NULL);
 
+	
 	if (hwind == NULL)
 	{
-		//Is PCSX2 ready?
+		//Cant find PCSX2. Is PCSX2 ready?
 		bool messageboxloop = true;
 		bool cancelPressed = false;
 		while (messageboxloop)
@@ -68,7 +70,7 @@ System::Void Form1::Form1_Load(System::Object^  sender, System::EventArgs^  e)
 	}
 
 
-
+	//Found it.
 	GetWindowThreadProcessId(hwind,&pid);
 	
 	//Timer to refresh stats.
@@ -87,35 +89,112 @@ System::Void Form1::comboBox1_SelectedIndexChanged(System::Object^  sender, Syst
 
 	int desiredPersona = index;
 
-	setValue(COffsets::persona1_modifer,index);
+	setValue(COffsets::persona1_modifer, index, 2);
 }
 
 System::Void Form1::numericUpDown1_ValueChanged(System::Object^  sender, System::EventArgs^  e)
 {
 	int index = (int)num_mc_level->Value;
 
-	setValue(COffsets::mc_level,index);
+	setValue(COffsets::mc_level, index, 2);
 }
 
 System::Void Form1::num_mc_current_hp_ValueChanged(System::Object^  sender, System::EventArgs^  e)
 {
 	int index = (int)num_mc_current_hp->Value;
 
-	setValue(COffsets::mc_current_hp,index);
+	setValue(COffsets::mc_current_hp, index, 2);
 }
 
 System::Void Form1::num_mc_current_mp_ValueChanged(System::Object^  sender, System::EventArgs^  e)
 {
 	int index = (int)num_mc_current_mp->Value;
 
-	setValue(COffsets::mc_current_mp,index);
+	setValue(COffsets::mc_current_mp, index, 2);
 }
 
 System::Void Form1::mc_mood_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
 {
 	int index = (int)mc_mood->SelectedIndex;
 	
-	setValue(COffsets::mc_mood,index);
+	setValue(COffsets::mc_mood, index, 2);
+}
+
+System::Void Form1::mc_academics_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)mc_academics->Value;
+	
+	setValue(COffsets::mc_academics, index, 2);
+}
+
+System::Void Form1::num_mc_charm_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)num_mc_charm->Value;
+	
+	setValue(COffsets::mc_charm, index, 2);
+}
+
+System::Void Form1::num_mc_courage_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)num_mc_courage->Value;
+	
+	setValue(COffsets::mc_courage, index, 2);
+}
+
+System::Void Form1::num_mc_equip_persona_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)num_mc_equip_persona->Value;
+	
+	setValue(COffsets::mc_equipped_persona, index, 2);
+}
+
+System::Void Form1::num_mc_money_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)num_mc_money->Value;
+	
+	setValue(COffsets::mc_money, index, 4);
+}
+
+System::Void Form1::persona1_level_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona1_level->Value;
+
+	setValue(COffsets::persona1_level, index, 2);
+}
+
+System::Void Form1::persona1_st_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona1_st->Value;
+
+	setValue(COffsets::persona1_str, index, 1);
+}
+
+System::Void Form1::persona1_ma_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona1_ma->Value;
+
+	setValue(COffsets::persona1_mag, index, 1);
+}
+
+System::Void Form1::persona1_en_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona1_en->Value;
+
+	setValue(COffsets::persona1_en, index, 1);
+}
+
+System::Void Form1::persona1_ag_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona1_ag->Value;
+
+	setValue(COffsets::persona1_ag, index, 1);
+}
+
+System::Void Form1::persona1_lu_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)persona1_lu->Value;
+
+	setValue(COffsets::persona1_luc, index, 1);
 }
 
 System::Void Form1::timer1_Tick(System::Object^  sender, System::EventArgs^  e)
@@ -132,11 +211,16 @@ System::Void Form1::timer1_Tick(System::Object^  sender, System::EventArgs^  e)
 	CloseHandle(pHandle);*/
 }
 
-System::Void Form1::setValue(LONG pokeAddress, int value)
+System::Void Form1::setValue(LONG pokeAddress, int value, int byteSize)
 {
 	HANDLE pHandle = OpenProcess(PROCESS_ALL_ACCESS,0,pid);
 
-	WriteProcessMemory(pHandle,(LPVOID)pokeAddress,&value,sizeof(short int),NULL);
+	if (byteSize == 1)
+		WriteProcessMemory(pHandle,(LPVOID)pokeAddress,&value,sizeof(bool),NULL);
+	else if (byteSize == 2)
+		WriteProcessMemory(pHandle,(LPVOID)pokeAddress,&value,sizeof(short int),NULL);
+	else if (byteSize == 4)
+		WriteProcessMemory(pHandle,(LPVOID)pokeAddress,&value,sizeof(long),NULL);
 
 	CloseHandle(pHandle);
 }

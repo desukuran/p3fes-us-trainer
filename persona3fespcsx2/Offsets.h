@@ -12,6 +12,10 @@ public:
 	static LONG mc_current_mp = 0x2083622E;
 	static LONG mc_equipped_persona = 0x20836BA8;
 	static LONG mc_mood = 0x2083626C;
+	static LONG mc_academics = 0x20836260;
+	static LONG mc_charm = 0x20836262;
+	static LONG mc_courage = 0x20836264;
+	static LONG mc_money = 0x2083A6DC;
 
 	//Persona 1
 	static LONG persona1_modifer = 0x20836BAE;
