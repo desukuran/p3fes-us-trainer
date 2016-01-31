@@ -87,22 +87,35 @@ System::Void Form1::comboBox1_SelectedIndexChanged(System::Object^  sender, Syst
 
 	int desiredPersona = index;
 
-	HANDLE pHandle = OpenProcess(PROCESS_ALL_ACCESS,0,pid);
-
-	WriteProcessMemory(pHandle,(LPVOID)COffsets::persona1_modifer,&desiredPersona,sizeof(short int),NULL);
-	
-	CloseHandle(pHandle);
+	setValue(COffsets::persona1_modifer,index);
 }
 
 System::Void Form1::numericUpDown1_ValueChanged(System::Object^  sender, System::EventArgs^  e)
 {
 	int index = (int)num_mc_level->Value;
 
-	HANDLE pHandle = OpenProcess(PROCESS_ALL_ACCESS,0,pid);
+	setValue(COffsets::mc_level,index);
+}
 
-	WriteProcessMemory(pHandle,(LPVOID)COffsets::mc_level,&index,sizeof(short int),NULL);
+System::Void Form1::num_mc_current_hp_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)num_mc_current_hp->Value;
+
+	setValue(COffsets::mc_current_hp,index);
+}
+
+System::Void Form1::num_mc_current_mp_ValueChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)num_mc_current_mp->Value;
+
+	setValue(COffsets::mc_current_mp,index);
+}
+
+System::Void Form1::mc_mood_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e)
+{
+	int index = (int)mc_mood->SelectedIndex;
 	
-	CloseHandle(pHandle);
+	setValue(COffsets::mc_mood,index);
 }
 
 System::Void Form1::timer1_Tick(System::Object^  sender, System::EventArgs^  e)
@@ -117,4 +130,13 @@ System::Void Form1::timer1_Tick(System::Object^  sender, System::EventArgs^  e)
 	//num_mc_level->Value = buff;
 
 	CloseHandle(pHandle);*/
+}
+
+System::Void Form1::setValue(LONG pokeAddress, int value)
+{
+	HANDLE pHandle = OpenProcess(PROCESS_ALL_ACCESS,0,pid);
+
+	WriteProcessMemory(pHandle,(LPVOID)pokeAddress,&value,sizeof(short int),NULL);
+
+	CloseHandle(pHandle);
 }
